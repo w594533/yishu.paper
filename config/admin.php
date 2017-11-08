@@ -5,17 +5,17 @@ return [
     /*
      * Laravel-admin name.
      */
-    'name'      => 'Laravel-admin',
+    'name'      => '一树纸业',
 
     /*
      * Logo in admin panel header.
      */
-    'logo'      => '<b>Laravel</b> admin',
+    'logo'      => '一树纸业',
 
     /*
      * Mini-logo in admin panel header.
      */
-    'logo-mini' => '<b>La</b>',
+    'logo-mini' => '<b>一树</b>',
 
     /*
      * Route configration.

@@ -15,18 +15,13 @@ class CreateSystemInfosTable extends Migration
     {
         Schema::create('system_infos', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('address')->index()->comment('地址');
             $table->string('phone')->index()->coment('总机');
-            $table->string('facsimile')->index()->comment('传真');
             $table->string('email')->index()->comment('邮箱');
-            $table->string('image')->index()->comment('地图');
-            $table->string('contract_person', 20)->index()->comment('联系人');
-            $table->string('hr_email')->nullable()->comment('招聘邮箱');
-            $table->text('about_body')->nullable()->comment('航丰概况内容');
-            $table->text('about_show_business_images')->nullable()->comment('业务展示图片');
-            $table->text('about_honor_images')->nullable()->comment('荣誉');
-            $table->string('about_vision_title')->nullable()->comment('愿景标题');
-            $table->text('about_vision_body')->nullable()->comment('愿景内容');
+            $table->text('about_body')->nullable()->comment('一树设计的描述');
+            $table->string('isudesign_site')->nullable()->default('')->comment('一树设计的官方网站')
+            $table->string('meta_keywords')->default('')->nullable()->comment('关键词');
+            $table->string('meta_description')->default('')->nullable()->comment('描述');
+            $table->string('meta_title')->default('')->nullable()->comment('标题');
             $table->timestamps();
         });
     }

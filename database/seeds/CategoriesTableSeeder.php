@@ -26,8 +26,8 @@ class CategoriesTableSeeder extends Seeder
                 'description' => NULL,
                 'order' => 1,
                 'created_at' => NULL,
-                'updated_at' => '2017-11-06 15:18:46',
-                'deleted_at' => NULL,
+                'updated_at' => '2017-11-08 14:16:41',
+                'deleted_at' => '2017-11-08 14:16:41',
             ),
             1 => 
             array (
@@ -38,8 +38,8 @@ class CategoriesTableSeeder extends Seeder
                 'description' => NULL,
                 'order' => 1,
                 'created_at' => NULL,
-                'updated_at' => '2017-11-06 15:19:08',
-                'deleted_at' => NULL,
+                'updated_at' => '2017-11-08 14:16:37',
+                'deleted_at' => '2017-11-08 14:16:37',
             ),
             2 => 
             array (
@@ -50,8 +50,8 @@ class CategoriesTableSeeder extends Seeder
                 'description' => NULL,
                 'order' => 2,
                 'created_at' => NULL,
-                'updated_at' => NULL,
-                'deleted_at' => NULL,
+                'updated_at' => '2017-11-08 14:16:32',
+                'deleted_at' => '2017-11-08 14:16:32',
             ),
             3 => 
             array (
@@ -62,8 +62,8 @@ class CategoriesTableSeeder extends Seeder
                 'description' => NULL,
                 'order' => 3,
                 'created_at' => NULL,
-                'updated_at' => NULL,
-                'deleted_at' => NULL,
+                'updated_at' => '2017-11-08 14:16:28',
+                'deleted_at' => '2017-11-08 14:16:28',
             ),
             4 => 
             array (
@@ -74,8 +74,8 @@ class CategoriesTableSeeder extends Seeder
                 'description' => NULL,
                 'order' => 4,
                 'created_at' => NULL,
-                'updated_at' => NULL,
-                'deleted_at' => NULL,
+                'updated_at' => '2017-11-08 14:16:23',
+                'deleted_at' => '2017-11-08 14:16:23',
             ),
             5 => 
             array (
@@ -86,8 +86,8 @@ class CategoriesTableSeeder extends Seeder
                 'description' => NULL,
                 'order' => 5,
                 'created_at' => NULL,
-                'updated_at' => NULL,
-                'deleted_at' => NULL,
+                'updated_at' => '2017-11-08 14:16:14',
+                'deleted_at' => '2017-11-08 14:16:14',
             ),
             6 => 
             array (
@@ -98,8 +98,8 @@ class CategoriesTableSeeder extends Seeder
                 'description' => NULL,
                 'order' => 1,
                 'created_at' => NULL,
-                'updated_at' => NULL,
-                'deleted_at' => NULL,
+                'updated_at' => '2017-11-08 14:16:48',
+                'deleted_at' => '2017-11-08 14:16:48',
             ),
             7 => 
             array (
@@ -110,8 +110,8 @@ class CategoriesTableSeeder extends Seeder
                 'description' => NULL,
                 'order' => 5,
                 'created_at' => NULL,
-                'updated_at' => NULL,
-                'deleted_at' => NULL,
+                'updated_at' => '2017-11-08 14:16:48',
+                'deleted_at' => '2017-11-08 14:16:48',
             ),
             8 => 
             array (
@@ -122,8 +122,8 @@ class CategoriesTableSeeder extends Seeder
                 'description' => NULL,
                 'order' => 5,
                 'created_at' => NULL,
-                'updated_at' => NULL,
-                'deleted_at' => NULL,
+                'updated_at' => '2017-11-08 14:16:48',
+                'deleted_at' => '2017-11-08 14:16:48',
             ),
             9 => 
             array (
@@ -158,8 +158,8 @@ class CategoriesTableSeeder extends Seeder
                 'description' => NULL,
                 'order' => 5,
                 'created_at' => NULL,
-                'updated_at' => NULL,
-                'deleted_at' => NULL,
+                'updated_at' => '2017-11-08 14:16:48',
+                'deleted_at' => '2017-11-08 14:16:48',
             ),
             12 => 
             array (
@@ -182,8 +182,8 @@ class CategoriesTableSeeder extends Seeder
                 'description' => NULL,
                 'order' => 5,
                 'created_at' => NULL,
-                'updated_at' => NULL,
-                'deleted_at' => NULL,
+                'updated_at' => '2017-11-08 14:16:48',
+                'deleted_at' => '2017-11-08 14:16:48',
             ),
             14 => 
             array (
@@ -206,8 +206,8 @@ class CategoriesTableSeeder extends Seeder
                 'description' => NULL,
                 'order' => 5,
                 'created_at' => NULL,
-                'updated_at' => NULL,
-                'deleted_at' => NULL,
+                'updated_at' => '2017-11-08 14:16:48',
+                'deleted_at' => '2017-11-08 14:16:48',
             ),
             16 => 
             array (
@@ -230,8 +230,8 @@ class CategoriesTableSeeder extends Seeder
                 'description' => NULL,
                 'order' => 5,
                 'created_at' => NULL,
-                'updated_at' => NULL,
-                'deleted_at' => NULL,
+                'updated_at' => '2017-11-08 14:16:48',
+                'deleted_at' => '2017-11-08 14:16:48',
             ),
             18 => 
             array (
@@ -248,37 +248,37 @@ class CategoriesTableSeeder extends Seeder
             19 => 
             array (
                 'id' => 20,
-                'title' => '公司动态',
+                'title' => '集团要闻',
                 'image' => NULL,
                 'parent_id' => 19,
                 'description' => NULL,
                 'order' => 1,
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2017-11-07 14:28:56',
                 'deleted_at' => NULL,
             ),
             20 => 
             array (
                 'id' => 21,
-                'title' => '行业资讯',
+                'title' => '行业动态',
                 'image' => NULL,
                 'parent_id' => 19,
                 'description' => NULL,
                 'order' => 1,
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2017-11-07 14:31:27',
                 'deleted_at' => NULL,
             ),
             21 => 
             array (
                 'id' => 22,
-                'title' => '媒体焦点',
+                'title' => '媒体报道',
                 'image' => NULL,
                 'parent_id' => 19,
                 'description' => NULL,
                 'order' => 1,
                 'created_at' => NULL,
-                'updated_at' => NULL,
+                'updated_at' => '2017-11-07 14:31:44',
                 'deleted_at' => NULL,
             ),
             22 => 
@@ -290,8 +290,8 @@ class CategoriesTableSeeder extends Seeder
                 'description' => NULL,
                 'order' => 1,
                 'created_at' => NULL,
-                'updated_at' => NULL,
-                'deleted_at' => NULL,
+                'updated_at' => '2017-11-07 14:28:38',
+                'deleted_at' => '2017-11-07 14:28:38',
             ),
             23 => 
             array (
@@ -302,8 +302,8 @@ class CategoriesTableSeeder extends Seeder
                 'description' => NULL,
                 'order' => 1,
                 'created_at' => NULL,
-                'updated_at' => NULL,
-                'deleted_at' => NULL,
+                'updated_at' => '2017-11-08 14:17:16',
+                'deleted_at' => '2017-11-08 14:17:16',
             ),
             24 => 
             array (
@@ -314,8 +314,8 @@ class CategoriesTableSeeder extends Seeder
                 'description' => NULL,
                 'order' => 1,
                 'created_at' => NULL,
-                'updated_at' => NULL,
-                'deleted_at' => NULL,
+                'updated_at' => '2017-11-08 14:17:06',
+                'deleted_at' => '2017-11-08 14:17:06',
             ),
             25 => 
             array (
@@ -590,8 +590,8 @@ class CategoriesTableSeeder extends Seeder
                 'description' => NULL,
                 'order' => 6,
                 'created_at' => '2017-11-05 16:21:37',
-                'updated_at' => '2017-11-05 16:21:37',
-                'deleted_at' => NULL,
+                'updated_at' => '2017-11-08 14:17:12',
+                'deleted_at' => '2017-11-08 14:17:12',
             ),
             48 => 
             array (
@@ -602,8 +602,8 @@ class CategoriesTableSeeder extends Seeder
                 'description' => NULL,
                 'order' => NULL,
                 'created_at' => '2017-11-05 16:22:59',
-                'updated_at' => '2017-11-05 16:22:59',
-                'deleted_at' => NULL,
+                'updated_at' => '2017-11-08 14:17:12',
+                'deleted_at' => '2017-11-08 14:17:12',
             ),
             49 => 
             array (
@@ -614,8 +614,8 @@ class CategoriesTableSeeder extends Seeder
                 'description' => NULL,
                 'order' => NULL,
                 'created_at' => '2017-11-05 16:23:12',
-                'updated_at' => '2017-11-05 16:23:12',
-                'deleted_at' => NULL,
+                'updated_at' => '2017-11-08 14:17:12',
+                'deleted_at' => '2017-11-08 14:17:12',
             ),
             50 => 
             array (
@@ -626,8 +626,8 @@ class CategoriesTableSeeder extends Seeder
                 'description' => NULL,
                 'order' => NULL,
                 'created_at' => '2017-11-05 16:23:24',
-                'updated_at' => '2017-11-05 16:23:24',
-                'deleted_at' => NULL,
+                'updated_at' => '2017-11-08 14:17:12',
+                'deleted_at' => '2017-11-08 14:17:12',
             ),
             51 => 
             array (
@@ -638,8 +638,8 @@ class CategoriesTableSeeder extends Seeder
                 'description' => NULL,
                 'order' => NULL,
                 'created_at' => '2017-11-05 16:23:41',
-                'updated_at' => '2017-11-05 16:23:41',
-                'deleted_at' => NULL,
+                'updated_at' => '2017-11-08 14:17:12',
+                'deleted_at' => '2017-11-08 14:17:12',
             ),
             52 => 
             array (
@@ -650,8 +650,8 @@ class CategoriesTableSeeder extends Seeder
                 'description' => NULL,
                 'order' => NULL,
                 'created_at' => '2017-11-05 16:23:54',
-                'updated_at' => '2017-11-05 16:23:54',
-                'deleted_at' => NULL,
+                'updated_at' => '2017-11-08 14:17:12',
+                'deleted_at' => '2017-11-08 14:17:12',
             ),
             53 => 
             array (
@@ -662,8 +662,8 @@ class CategoriesTableSeeder extends Seeder
                 'description' => NULL,
                 'order' => NULL,
                 'created_at' => '2017-11-05 16:24:07',
-                'updated_at' => '2017-11-05 16:24:07',
-                'deleted_at' => NULL,
+                'updated_at' => '2017-11-08 14:17:12',
+                'deleted_at' => '2017-11-08 14:17:12',
             ),
             54 => 
             array (
@@ -674,8 +674,8 @@ class CategoriesTableSeeder extends Seeder
                 'description' => NULL,
                 'order' => NULL,
                 'created_at' => '2017-11-05 16:24:19',
-                'updated_at' => '2017-11-05 16:24:19',
-                'deleted_at' => NULL,
+                'updated_at' => '2017-11-08 14:17:12',
+                'deleted_at' => '2017-11-08 14:17:12',
             ),
         ));
         

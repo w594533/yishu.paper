@@ -2,7 +2,8 @@
 
 namespace App\Admin\Controllers;
 
-use App\Models\SystemInfo;
+use App\Models\CompanyHistory;
+
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Facades\Admin;
@@ -10,7 +11,7 @@ use Encore\Admin\Layout\Content;
 use App\Http\Controllers\Controller;
 use Encore\Admin\Controllers\ModelForm;
 
-class SystemInfoController extends Controller
+class CompanyHistoryController extends Controller
 {
     use ModelForm;
 
@@ -23,8 +24,8 @@ class SystemInfoController extends Controller
     {
         return Admin::content(function (Content $content) {
 
-            $content->header('网站信息');
-            $content->description('描述');
+            $content->header('列表');
+            $content->description('集团简介');
 
             $content->body($this->grid());
         });
@@ -41,7 +42,7 @@ class SystemInfoController extends Controller
         return Admin::content(function (Content $content) use ($id) {
 
             $content->header('编辑');
-            $content->description('系统信息');
+            $content->description('集团简介');
 
             $content->body($this->form()->edit($id));
         });
@@ -56,8 +57,8 @@ class SystemInfoController extends Controller
     {
         return Admin::content(function (Content $content) {
 
-            $content->header('新建');
-            $content->description('系统信息');
+            $content->header('新增');
+            $content->description('集团简介');
 
             $content->body($this->form());
         });
@@ -70,20 +71,23 @@ class SystemInfoController extends Controller
      */
     protected function grid()
     {
-        return Admin::grid(SystemInfo::class, function (Grid $grid) {
-          // $grid->disableFilter();
-          // $grid->disableCreation();
-          // $grid->disableExport();
-          // $grid->actions(function ($actions) {
-          //   $actions->disableDelete();
-          // });
-          // $grid->disableActions('delete');
+        return Admin::grid(CompanyHistory::class, function (Grid $grid) {
+          $grid->disableFilter();
+          $grid->disableCreation();
+          $grid->disableExport();
+          $grid->actions(function ($actions) {
+            $actions->disableDelete();
+          });
+          $grid->tools(function ($tools) {
+            $tools->batch(function ($batch) {
+              $batch->disableDelete();
+            });
+          });
+          
 
             $grid->id('ID')->sortable();
-            $grid->phone('电话');
-            $grid->email('邮箱');
-
-
+            $grid->title('标题');
+            $grid->year('年份');
         });
     }
 
@@ -94,20 +98,15 @@ class SystemInfoController extends Controller
      */
     protected function form()
     {
-        return Admin::form(SystemInfo::class, function (Form $form) {
+        return Admin::form(CompanyHistory::class, function (Form $form) {
 
-          $form->tab('联系信息', function ($form) {
             $form->display('id', 'ID');
-            $form->text('phone', '电话');
-            $form->email('email', '邮箱');
-          })->tab('一树设计信息', function ($form){
-            $form->text('isudesign_site', '官网地址');
-            $form->textarea('about_body', '介绍');
-          })->tab('Meta优化', function($form) {
-            $form->text("meta_title", '标题');
-            $form->text('meta_keywords', '关键词');
-            $form->text('meta_description', '描述');
-          });
+            $form->text('title', '标题')->help('可不填');
+            $form->text('year', '年份');
+            $form->textarea('body', '介绍');
+
+            // $form->display('created_at', 'Created At');
+            // $form->display('updated_at', 'Updated At');
         });
     }
 }

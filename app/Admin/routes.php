@@ -21,13 +21,12 @@ Route::group([
 
     $router->resource('/notice', 'NoticeController');
 
-    $router->resource('/recruit', 'RecruitController');
-
-    $router->resource('/products', 'ProductController');
-
-    $router->resource('/cooperations', 'CooperationController');
-
     $router->resource('/system_info', 'SystemInfoController');
+
+    $router->resource('/product_categories', 'ProductCategoryController');
+    $router->resource('/branches', 'BranchController');
+    $router->resource('/banners', 'BannerController');
+    $router->resource('/company_histories', 'CompanyHistoryController');
 
 
 

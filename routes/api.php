@@ -29,8 +29,12 @@ Route::group(['namespace' => 'Api', 'prefix' => 'v1'], function () {
   Route::get('/about', 'HomeController@about')->name('about');
 
   Route::get('/system_info', 'HomeController@systems_info')->name('systems_info');
+  Route::get('/company_history', 'HomeController@company_history')->name('company_history');
 
   Route::get('/join', 'JoinController@index')->name('index');
 
   Route::get('/news', 'NewsController@index')->name('index');
+  Route::get('/newslist', 'NewsController@toShowList')->name('newslist');
+  Route::get('/news/{post}', 'NewsController@show')->name('news.show');
+  Route::get('/isudesign', 'HomeController@isudesign')->name('isudesign');
 });
