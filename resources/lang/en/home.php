@@ -1,70 +1,56 @@
 <?php
   return [
-    "view_detail" => "View Detail",
-    "view_partner_more" => "View More",
-    "banner_title" => 'To ensure the quality of service,to satisfy  customer requirements',
-    "home_banner" => [
-      "first" => [
-        "name" => "Hangfeng Textile",
-        "desc" => "Perfect quality comes from the details of the persistent",
-        "en" => "THE QUALITY OF PERTFCTION COMES FROM THE PERSISTENCE OF DETAIL",
-      ],
-      "second" => [
-        "name" => "",
-        "desc" => "Hangfeng Textile Co., Ltd",
-        "en" => "诸暨航丰针纺织有限公司成立于2004年,公司专业生产各类航空用座椅外套、毛毯、被、枕头、枕套、餐巾、桌布、无纺布头靠等系列产品，是集产品设计、开发、生产、销售于一体的航空纺织用品综合企业。",
-      ],
-      "third" => [
-        "name" => "Cooperative partner",
-        "desc" => "领引非凡成就",
-        "en" => "LEAD EXTRAORDINARY ACHIEVEMENT",
-      ],
-      "fourth" => [
-        "name" => "Hangfeng",
-        "desc" => "航空纺织领导者",
-        "en" => "Aviation Textile Leader",
-      ]
-    ],
     "about" => [
-      "hangfenggaikuang" => "Hangfeng profile",
-      "router" => [
-        "title" => "About Hangefeng",
-        "desc" => "Aviation Textile Leader",
-        "partner" => [
-          "title" => "Our customers all over the world, win-win cooperation with you",
-          "detail" => [
-            "title" => "North American customers",
-            "content" => [
-              "United Airlines",
-              "American Airlines",
-              "Delta Airline",
-              "Alaska Airlines",
-              "Virgin America",
-              "Hawaiian Airlines",
-              "Canadian Airlines"
-            ]
-          ]
-        ]
+      "title" => "About Us",
+      "subtitle" => "Make colored paper for your colorful life",
+      "iconlist" => [
+        "first" => "8万平方米厂房",
+        "second" => "17家分公司",
+        "third" => "23条生产线",
+        "fouth" => "1500种产品",
+        "fifth" => "7万吨生产力",
+        "six" => "1家专业设计公司"
       ]
     ],
-    "culture" => [
-      "left_text" => ["Product Innovation","Innovation is our eternal theme,no innovation, no transcendence.","In a way,innovation is the cultural core of all excellent enterprises."],
-      "right_text" => ["based on credit","Want to do business, the first to establish credibility."]
+    "family_cn" => '我们的家族',
+    "family_en" => 'Our Family',
+    "factory" => "Factory",
+    "branch" => "Branch",
+    "branch_place" => "Beijing、Wuhan、Wuxi、Shanghai、Hangzhou、Ningbo、Taizhou、Yiwu、Wenzhou、Pingyang、Longgang、Fuzhou、Quanzhou、Xiamen、Shenzhen、Dongguan、Guangzhou",
+    "product_title" => "Product Center",
+    "product_subtitle" => "我们为您提供定制化服务解决方案",
+    "news_title" => "News Center",
+    "news_subtitle" => "与国际接轨，提供最高品质",
+    "newest" => 'Latest',
+    'company_hisgory' => [
+      'company_title' => 'Group profile',
+      'equipment' => [
+        'title' => '生产设备',
+        'first' => '生产',
+        'second' => '质量',
+        'third' => '检验',
+        'fouth' => '仓储'
+      ]
     ],
-    "menu" => [
-      "home" => "Home",
-      "about" => "About",
-      "product" => "Product",
-      "news" => "News",
-      "join_us" => "Join Us",
-      "contact_us" => "Contact Us"
+    'contact' => [
+      'title' => '与国际接轨，提供最高品质',
+      'subtitle' => 'In line with international standards,to provide the highest quality',
+      'news_company' => 'News of the group',
+      'news_media' => 'Media reports',
+      'news_industry' => 'Industry dynamic'
     ],
-    "contact" => [
-      "tel" => "Tel",
-      "fax" => "Fax",
-      "email" => "Email",
-      "address" => "Address",
-      "postal" => "Postal"
-    ]
+    'enter_isudesign' => 'Enter To Isu Design',
+    'tel' => 'Tel',
+    'email' => 'Email',
+    'prev_post' => 'Prev',
+    'next_post' => 'Next',
+    'nav' => [
+      "Home",
+      "Product Center",
+      "Company",
+      "Isu Design",
+      "News Center",
+      "Contact Us",
+    ],
   ];
 ?>
