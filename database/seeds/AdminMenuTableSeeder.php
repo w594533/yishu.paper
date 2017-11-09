@@ -1,79 +1,23 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Encore\Admin\Auth\Database\Permission;
-use Encore\Admin\Auth\Database\Menu;
-use Encore\Admin\Auth\Database\Role;
-use Encore\Admin\Auth\Database\Administrator;
 
-class AdminsMenuTableSeeder extends Seeder
+class AdminMenuTableSeeder extends Seeder
 {
+
     /**
-     * Run the database seeds.
+     * Auto generated seed file
      *
      * @return void
      */
     public function run()
     {
-        // create a user.
-        Administrator::truncate();
-        Administrator::create([
-            'username'  => 'admin',
-            'password'  => bcrypt('admin'),
-            'name'      => 'Administrator',
-        ]);
+        
 
-        // create a role.
-        Role::truncate();
-        Role::create([
-            'name'  => 'Administrator',
-            'slug'  => 'administrator',
-        ]);
-
-        // add role to user.
-        Administrator::first()->roles()->save(Role::first());
-
-        //create a permission
-        Permission::truncate();
-        Permission::insert([
-            [
-                'name'        => 'All permission',
-                'slug'        => '*',
-                'http_method' => '',
-                'http_path'   => '*',
-            ],
-            [
-                'name'        => 'Dashboard',
-                'slug'        => 'dashboard',
-                'http_method' => 'GET',
-                'http_path'   => '/',
-            ],
-            [
-                'name'        => 'Login',
-                'slug'        => 'auth.login',
-                'http_method' => '',
-                'http_path'   => "/auth/login\r\n/auth/logout",
-            ],
-            [
-                'name'        => 'User setting',
-                'slug'        => 'auth.setting',
-                'http_method' => 'GET,PUT',
-                'http_path'   => '/auth/setting',
-            ],
-            [
-                'name'        => 'Auth management',
-                'slug'        => 'auth.management',
-                'http_method' => '',
-                'http_path'   => "/auth/roles\r\n/auth/permissions\r\n/auth/menu\r\n/auth/logs",
-            ],
-        ]);
-
-        Role::first()->permissions()->save(Permission::first());
-
-        // add default menus.
-        Menu::truncate();
-        Menu::insert(array (
-            0 =>
+        \DB::table('admin_menu')->delete();
+        
+        \DB::table('admin_menu')->insert(array (
+            0 => 
             array (
                 'id' => 1,
                 'parent_id' => 0,
@@ -84,7 +28,7 @@ class AdminsMenuTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            1 =>
+            1 => 
             array (
                 'id' => 2,
                 'parent_id' => 0,
@@ -95,7 +39,7 @@ class AdminsMenuTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            2 =>
+            2 => 
             array (
                 'id' => 3,
                 'parent_id' => 2,
@@ -106,7 +50,7 @@ class AdminsMenuTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            3 =>
+            3 => 
             array (
                 'id' => 6,
                 'parent_id' => 2,
@@ -117,7 +61,7 @@ class AdminsMenuTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => '2017-11-09 09:01:52',
             ),
-            4 =>
+            4 => 
             array (
                 'id' => 8,
                 'parent_id' => 0,
@@ -128,7 +72,7 @@ class AdminsMenuTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => '2017-11-09 09:01:52',
             ),
-            5 =>
+            5 => 
             array (
                 'id' => 13,
                 'parent_id' => 0,
@@ -139,7 +83,7 @@ class AdminsMenuTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => '2017-11-09 09:01:53',
             ),
-            6 =>
+            6 => 
             array (
                 'id' => 20,
                 'parent_id' => 0,
@@ -150,7 +94,7 @@ class AdminsMenuTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => '2017-11-09 09:01:53',
             ),
-            7 =>
+            7 => 
             array (
                 'id' => 21,
                 'parent_id' => 20,
@@ -161,7 +105,7 @@ class AdminsMenuTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => '2017-11-09 09:01:53',
             ),
-            8 =>
+            8 => 
             array (
                 'id' => 22,
                 'parent_id' => 20,
@@ -172,7 +116,7 @@ class AdminsMenuTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => '2017-11-09 09:01:53',
             ),
-            9 =>
+            9 => 
             array (
                 'id' => 23,
                 'parent_id' => 20,
@@ -183,7 +127,7 @@ class AdminsMenuTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => '2017-11-07 14:30:50',
             ),
-            10 =>
+            10 => 
             array (
                 'id' => 25,
                 'parent_id' => 0,
@@ -194,7 +138,7 @@ class AdminsMenuTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => '2017-11-09 09:07:56',
             ),
-            11 =>
+            11 => 
             array (
                 'id' => 26,
                 'parent_id' => 0,
@@ -205,7 +149,7 @@ class AdminsMenuTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => '2017-11-09 09:01:53',
             ),
-            12 =>
+            12 => 
             array (
                 'id' => 27,
                 'parent_id' => 0,
@@ -216,7 +160,7 @@ class AdminsMenuTableSeeder extends Seeder
                 'created_at' => '2017-11-09 09:01:01',
                 'updated_at' => '2017-11-09 09:09:13',
             ),
-            13 =>
+            13 => 
             array (
                 'id' => 28,
                 'parent_id' => 0,
@@ -228,8 +172,7 @@ class AdminsMenuTableSeeder extends Seeder
                 'updated_at' => '2017-11-09 09:08:25',
             ),
         ));
-
-        // add role to menu.
-        Menu::find(2)->roles()->save(Role::first());
+        
+        
     }
 }
