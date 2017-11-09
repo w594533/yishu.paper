@@ -71,13 +71,17 @@ class SystemInfoController extends Controller
     protected function grid()
     {
         return Admin::grid(SystemInfo::class, function (Grid $grid) {
-          // $grid->disableFilter();
-          // $grid->disableCreation();
-          // $grid->disableExport();
-          // $grid->actions(function ($actions) {
-          //   $actions->disableDelete();
-          // });
-          // $grid->disableActions('delete');
+          $grid->disableFilter();
+          $grid->disableCreation();
+          $grid->disableExport();
+          $grid->actions(function ($actions) {
+            $actions->disableDelete();
+          });
+          $grid->tools(function ($tools) {
+            $tools->batch(function ($batch) {
+              $batch->disableDelete();
+            });
+          });
 
             $grid->id('ID')->sortable();
             $grid->phone('电话');
