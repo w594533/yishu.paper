@@ -25,11 +25,11 @@
     'company_hisgory' => [
       'company_title' => 'Group profile',
       'equipment' => [
-        'title' => '生产设备',
-        'first' => '生产',
-        'second' => '质量',
-        'third' => '检验',
-        'fouth' => '仓储'
+        'title' => 'Equipment',
+        'first' => 'Production',
+        'second' => 'Quality',
+        'third' => 'Checkout',
+        'fouth' => 'Storage'
       ]
     ],
     'contact' => [
