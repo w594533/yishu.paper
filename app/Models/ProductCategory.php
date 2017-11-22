@@ -29,11 +29,6 @@ class ProductCategory extends Model
       }
     }
 
-    public function getTitleAttribute($title)
-    {
-      return ucfirst(strtolower($title));
-    }
-
     public function getImageAttribute($image)
     {
       if ($image) {
