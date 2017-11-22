@@ -21,7 +21,7 @@ class HomeController extends Controller
       $banners = Banner::where("id", 1)->select("image")->get();
       $result['banners'] = $banners;
       $news = Post::orderBy('created_at', 'desc')->take(6)->get();
-      $products = ProductCategory::where('parent_id','<>',0)->whereNotNull("image")->select("id", "title", "image", "description")->take(5)->get();
+      $products = ProductCategory::where('parent_id',0)->whereNotNull("image")->select("id", "title", "image", "description")->take(5)->get();
       $result['newslist'] = $news;
       $result['products'] = $products;
       $result['about'] = [
