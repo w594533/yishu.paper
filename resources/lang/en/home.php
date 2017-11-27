@@ -46,11 +46,11 @@
     'next_post' => 'Next',
     'nav' => [
       "Home",
-      "Product Center",
+      "Product",
       "Company",
       "Isu Design",
-      "News Center",
-      "Contact Us",
+      "News",
+      "Contact",
     ],
   ];
 ?>
