@@ -35,9 +35,9 @@
     'contact' => [
       'title' => '与国际接轨，提供最高品质',
       'subtitle' => 'In line with international standards,to provide the highest quality',
-      'news_company' => 'News of the group',
-      'news_media' => 'Media reports',
-      'news_industry' => 'Industry dynamic'
+      'news_company' => 'Group News',
+      'news_media' => 'Media Report',
+      'news_industry' => 'Industry Dynamics'
     ],
     'enter_isudesign' => 'Enter To Isu Design',
     'tel' => 'Tel',
