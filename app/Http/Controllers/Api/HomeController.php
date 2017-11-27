@@ -29,28 +29,40 @@ class HomeController extends Controller
         "subtitle" => trans("home.about.subtitle"),
         "iconlist" => [
           [
-            'image' => config('app.url').'/img/home_icon1.png',
+            'image' => config('app.url').'/img/index-section1-img-1-1.png',
             'text' => trans("home.about.iconlist.first"),
+            'image_hover' => config('app.url').'/img/index-section1-img-1-1-circle.png',
+            'text_hover' => trans("home.about.iconlist.first_hover")
           ],
           [
-            'image' => config('app.url').'/img/home_icon2.png',
+            'image' => config('app.url').'/img/index-section1-img-1-2.png',
             'text' => trans("home.about.iconlist.second"),
+            'image_hover' => config('app.url').'/img/index-section1-img-1-2-circle.png',
+            'text_hover' => trans("home.about.iconlist.second_hover")
           ],
           [
-            'image' => config('app.url').'/img/home_icon3.png',
+            'image' => config('app.url').'/img/index-section1-img-1-3.png',
             'text' => trans("home.about.iconlist.third"),
+            'image_hover' => config('app.url').'/img/index-section1-img-1-3-circle.png',
+            'text_hover' => trans("home.about.iconlist.third_hover")
           ],
           [
-            'image' => config('app.url').'/img/home_icon4.png',
+            'image' => config('app.url').'/img/index-section1-img-2-1.png',
             'text' => trans("home.about.iconlist.fouth"),
+            'image_hover' => config('app.url').'/img/index-section1-img-2-1-circle.png',
+            'text_hover' => trans("home.about.iconlist.fouth_hover")
           ],
           [
-            'image' => config('app.url').'/img/home_icon5.png',
+            'image' => config('app.url').'/img/index-section1-img-2-2.png',
             'text' => trans("home.about.iconlist.fifth"),
+            'image_hover' => config('app.url').'/img/index-section1-img-2-2-circle.png',
+            'text_hover' => trans("home.about.iconlist.fifth_hover")
           ],
           [
-            'image' => config('app.url').'/img/home_icon6.png',
+            'image' => config('app.url').'/img/index-section1-img-2-3.png',
             'text' => trans("home.about.iconlist.six"),
+            'image_hover' => config('app.url').'/img/index-section1-img-2-3-circle.png',
+            'text_hover' => trans("home.about.iconlist.six_hover")
           ],
         ],
         "factory" => trans('home.factory'),
