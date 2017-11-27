@@ -130,6 +130,10 @@ class HomeController extends Controller
         'meta_keywords' => $system_infos->meta_keywords,
         'meta_description' => $system_infos->meta_description
       ];
+      $result['isu_design'] = [
+        'body' => $system_infos->about_body,
+        'site' => $system_infos->isudesign_site
+      ];
       return response()->json($result, 200);
     }
 
