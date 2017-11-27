@@ -16,7 +16,7 @@ class ProductController extends Controller
     {
       $result = [];
       $result['banners'] = Banner::where("id", 3)->select("image")->get();;
-      $result['list'] = ProductCategory::with("childrenCategories")->select("id", "title", "image", "description")->get();
+      $result['list'] = ProductCategory::where('parent_id',0)->with("childrenCategories")->select("id", "title", "image", "description")->get();
       return response()->json($result, 200);
     }
 }
