@@ -29,4 +29,35 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/', 'Frontend\HomeController@show');
+
+Route::group(['namespace' => 'Frontend'], function() {
+  Route::get('home', 'HomeController@show')->name('home');
+
+  Route::get('news/{post}', 'NewsController@show')->name('news.show');
+
+  Route::get('product', 'ProductController@show')->name('product');
+
+  Route::get('about', 'AboutController@show')->name('about');
+  //
+  // Route::post('feedback', 'HomeController@store')->name('feedback');
+  //
+  // Route::get('news', 'NewsController@toShowNewsList')->name('news');
+  //
+  // Route::get('news_info', 'NewsController@show')->name('news_info');
+  //
+  // Route::get('product', 'ProductController@toShowList')->name('product');
+  //
+  // Route::get('product_info', 'ProductController@show')->name('product_info');
+  //
+  // Route::get('case', 'CaseController@toShowList')->name('case');
+  //
+  // Route::get('case_info', 'CaseController@show')->name('case_info');
+  //
+  // Route::get('contact', 'ContactController@show')->name('contact');
+  //
+  // Route::get('about', 'AboutController@show')->name('about');
+  // Route::get('hr', 'HrController@show')->name('hr');
+
+});

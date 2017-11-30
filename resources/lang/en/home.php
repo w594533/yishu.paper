@@ -51,12 +51,12 @@
     'prev_post' => 'Prev',
     'next_post' => 'Next',
     'nav' => [
-      "Home",
-      "Product",
-      "Company",
-      "Isu Design",
-      "News",
-      "Contact",
+      "home" => "Home",
+      "product" => "Product",
+      "company" => "Company",
+      "isu_design" => "Isu Design",
+      "news" => "News",
+      "contact" => "Contact",
     ],
   ];
 ?>

@@ -1,0 +1,22 @@
+.clique-section2-pagination-txt {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px auto;
+}
+.clique-section1-img-txt-left-top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.clique-section1-img-txt-left-top-content-time {
+  padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  .clique-section1-img-txt-left-top-content-time {
+    /*width: auto;
+    height:  auto;
+    padding: 0 10px;*/
+  }
+}
