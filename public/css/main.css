@@ -2096,6 +2096,10 @@ a {
 .news-section1-left-text {
     margin-top: 13px;
     margin-bottom: 33px;
+<<<<<<< HEAD
+    line-height: 22px;
+=======
+>>>>>>> d47a9b6d9814440516e88e793de9833b9ec38e63
 }
 
 .news-section1-left-text-title {
@@ -2103,7 +2107,10 @@ a {
 }
 
 .news-section1-left-text-txt {
+<<<<<<< HEAD
+=======
     font-weight: bold;
+>>>>>>> d47a9b6d9814440516e88e793de9833b9ec38e63
     font-size: 12px;
     color: #686868;
 }
@@ -2128,13 +2135,29 @@ a {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #ddd;
+<<<<<<< HEAD
+    padding: 10px 0;
+=======
     height: 113px;
+>>>>>>> d47a9b6d9814440516e88e793de9833b9ec38e63
 }
 
 .news-section1-right-box-content-txt {
     height: max-content;
     margin-left: 14px;
     align-self: center;
+<<<<<<< HEAD
+    line-height: 22px;
+}
+
+.news-section1-right-box-content-time {
+    align-self: center;
+    width: 25%;
+}
+
+.news-section1-right-box-content-time-day {
+    font-size: 59px;
+=======
 }
 
 .news-section1-right-box-content-time {
@@ -2149,24 +2172,37 @@ a {
     font-weight: bold;
     font-size: 56px;
     line-height: 50px;
+>>>>>>> d47a9b6d9814440516e88e793de9833b9ec38e63
     color: #d4d4d4;
 }
 
 .news-section1-right-box-content-time-year {
+<<<<<<< HEAD
+    font-size: 14px;
+    color: #d4d4d4;
+    text-indent: 10px;
+=======
     text-align: center;
     font-size: 16px;
     color: #d4d4d4;
     width: 68px;
+>>>>>>> d47a9b6d9814440516e88e793de9833b9ec38e63
 }
 
 .news-section1-right-box-content-txt-title {
     font-size: 14px;
+<<<<<<< HEAD
+=======
     font-weight: bold;
+>>>>>>> d47a9b6d9814440516e88e793de9833b9ec38e63
     color: #565555;
 }
 
 .news-section1-right-box-content-txt-txt {
+<<<<<<< HEAD
+=======
     font-weight: bold;
+>>>>>>> d47a9b6d9814440516e88e793de9833b9ec38e63
     font-size: 12px;
     color: #bfbfbf;
 }
@@ -2199,6 +2235,10 @@ a {
 
 .news-section2-img-alt {
     margin-top: 18px;
+<<<<<<< HEAD
+    line-height:  22px;
+=======
+>>>>>>> d47a9b6d9814440516e88e793de9833b9ec38e63
 }
 
 .news-section3 {
@@ -2232,6 +2272,10 @@ a {
 .news-section3-content-box-txt {
     margin-top: 60px;
     padding-left: 27px;
+<<<<<<< HEAD
+    line-height: 22px;
+=======
+>>>>>>> d47a9b6d9814440516e88e793de9833b9ec38e63
 }
 
 .news-section3-content-box-txt-txt {
@@ -2764,6 +2808,8 @@ p {
 }
 
 .media-section1-content-box {
+<<<<<<< HEAD
+=======
     width: 1200px;
     height: 122px;
     box-sizing: border-box;
@@ -2771,6 +2817,7 @@ p {
 }
 
 .media-section1-content-box {
+>>>>>>> d47a9b6d9814440516e88e793de9833b9ec38e63
     display: flex;
     cursor: pointer;
 }
@@ -2780,11 +2827,17 @@ p {
 }
 
 .media-section1-content-box-time {
+<<<<<<< HEAD
+    text-align: left;
+    color: #dddddd;
+    font-size: 14px;
+=======
     text-align: center;
     width: 70px;
     color: #dddddd;
     margin-left: 21px;
     margin-right: 10px;
+>>>>>>> d47a9b6d9814440516e88e793de9833b9ec38e63
 }
 
 .media-section1-content-box-day {
@@ -2798,16 +2851,25 @@ p {
 }
 
 .media-section1-content-box-txt span {
+<<<<<<< HEAD
+=======
     font-weight: bold;
+>>>>>>> d47a9b6d9814440516e88e793de9833b9ec38e63
     color: #4a4949;
 }
 
 .media-section1-content-box-txt p {
+<<<<<<< HEAD
+    color: #bfbfbf;
+    font-size: 14px;
+    margin-top: 8px;
+=======
     font-weight: bold;
     color: #bfbfbf;
     font-size: 14px;
     margin-top: 8px;
     padding-left: 5px;
+>>>>>>> d47a9b6d9814440516e88e793de9833b9ec38e63
 }
 
 .media-section1-content-clique,
@@ -2836,21 +2898,30 @@ p {
 }
 
 .media-section1-content-box-left {
+<<<<<<< HEAD
+=======
     width: 250px;
+>>>>>>> d47a9b6d9814440516e88e793de9833b9ec38e63
     display: flex;
     justify-content: space-between;
 }
 
 @media screen and (max-width: 1333.3333px) {
     .media-section1-content-box {
+<<<<<<< HEAD
+=======
         width: 90vw;
+>>>>>>> d47a9b6d9814440516e88e793de9833b9ec38e63
         height: auto;
         padding-top: 15px;
         padding-bottom: 15px;
     }
 
     .media-section1-title-content {
+<<<<<<< HEAD
+=======
         width: 90vw;
+>>>>>>> d47a9b6d9814440516e88e793de9833b9ec38e63
         margin: auto;
     }
 }
@@ -2868,13 +2939,19 @@ p {
         width: 90vw;
     }
     .media-section1-content-box{
+<<<<<<< HEAD
+=======
         flex-wrap: wrap;
+>>>>>>> d47a9b6d9814440516e88e793de9833b9ec38e63
     }
     .media-section1-content-box-left{
         margin: auto;
     }
     .media-section1-content-box-txt{
+<<<<<<< HEAD
+=======
         width: 90vw;
+>>>>>>> d47a9b6d9814440516e88e793de9833b9ec38e63
         margin: auto;
     }
 }

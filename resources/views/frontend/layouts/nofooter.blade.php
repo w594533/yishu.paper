@@ -27,7 +27,6 @@
     <div class="content">
       @yield('content')
     </div>
-    @include('frontend.layouts._footer')
   </div>
 <script>
 $(function(){
@@ -46,9 +45,7 @@ $(function(){
                 $('.nav-list-mobile > ul >li').removeClass('nav-active-mobile');
                 $($('.nav-list-mobile > ul >li')[index]).addClass('nav-active-mobile');
             });
-            navHover();
             navBar();
-            footerNav();
 })
 </script>
 </body>

@@ -35,11 +35,14 @@ Route::get('/', 'Frontend\HomeController@show');
 Route::group(['namespace' => 'Frontend'], function() {
   Route::get('home', 'HomeController@show')->name('home');
 
+  Route::get('news', 'NewsController@toShowList')->name('news.list');
   Route::get('news/{post}', 'NewsController@show')->name('news.show');
 
   Route::get('product', 'ProductController@show')->name('product');
 
   Route::get('about', 'AboutController@show')->name('about');
+  Route::get('isu_design', 'IsuDesignController@show')->name('isu_design');
+  Route::get('news_center', 'NewsController@center')->name('news.center');
   //
   // Route::post('feedback', 'HomeController@store')->name('feedback');
   //
