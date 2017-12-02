@@ -70,7 +70,6 @@
     width: 20px;
   }
 }
-<<<<<<< HEAD
 
 /*新闻中心*/
 .news-pagination {
@@ -280,5 +279,9 @@
   background-color: #fff;
   border-color: #ddd;
 }
-=======
->>>>>>> d47a9b6d9814440516e88e793de9833b9ec38e63
+.news-section1-right-box-content-time-day {
+  color: #d4d4d4;
+}
+.news-section1-right-box-content-txt-txt {
+  font-size: 12px;
+}

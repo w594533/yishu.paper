@@ -22,14 +22,16 @@ class FrontendController extends Controller
       $meta_keywords = SystemInfo::pluck('meta_keywords')->first();
       $meta_title = SystemInfo::pluck('meta_title')->first();
 
+      $system_infos = SystemInfo::find(1);
       View::share('meta_description', $meta_description);
       View::share('meta_keywords', $meta_keywords);
       View::share('meta_title', $meta_title);
+      View::share('system_infos', $system_infos);
     }
 
     public function activeModule($module)
     {
-        View::share('active', [$module => 'active_top']);
+        View::share('active', [$module => 'nav-active']);
     }
 
     public function getEquipmentList()

@@ -1,0 +1,34 @@
+.contact-section1 {
+  width: 100%;
+  max-width: 960px;
+  margin: 0px auto;
+}
+.contact-section1-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+
+.contact-box {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.contact-section1-content-top-box-left-txt {
+  margin: 20px 0;
+}
+.contact-section1-content-top-box-left-title {
+  margin-bottom: 40px;
+}
+.contact-box-inner {
+  padding: 30px 10px;
+}
+@media screen and (max-width: 768px) {
+    .contact-box {
+      flex-wrap: wrap;
+      width: 100%;
+    }
+}

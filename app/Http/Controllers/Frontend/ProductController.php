@@ -10,6 +10,8 @@ class ProductController extends FrontendController
 {
     public function show()
     {
+      $this->activeModule('product');
+
       $banners = \App\Models\Banner::where("id", 3)->pluck("image")->first();
       $products = ProductCategory::where('parent_id',0)->with("childrenCategories")->select("id", "title", "image", "description")->get();
       //dd($products);

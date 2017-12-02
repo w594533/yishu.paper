@@ -9,6 +9,12 @@ use App\Models\Category;
 
 class NewsController extends FrontendController
 {
+  public function __construct()
+  {
+      parent::__construct();
+      $this->activeModule('news');
+  }
+
   public function show(Post $post)
   {
     return view('frontend.news_detail', compact('post'));

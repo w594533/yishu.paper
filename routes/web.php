@@ -43,6 +43,8 @@ Route::group(['namespace' => 'Frontend'], function() {
   Route::get('about', 'AboutController@show')->name('about');
   Route::get('isu_design', 'IsuDesignController@show')->name('isu_design');
   Route::get('news_center', 'NewsController@center')->name('news.center');
+  Route::get('contact', 'ContactController@show')->name('contact');
+  Route::get('default', 'DefaultController@show')->name('default');
   //
   // Route::post('feedback', 'HomeController@store')->name('feedback');
   //

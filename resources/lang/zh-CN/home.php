@@ -40,8 +40,11 @@
       'news_industry' => '行业动态'
     ],
     'enter_isudesign' => '进入一树设计官方网站',
+    'enter_site' => '进入一树官方网站',
     'tel' => '电话',
     'email' => '邮箱',
+    'fax' => '传真',
+    'address' => '地址',
     'prev_post' => '上一篇',
     'next_post' => '下一篇',
     'nav' => [

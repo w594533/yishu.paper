@@ -10,6 +10,8 @@ class IsuDesignController extends FrontendController
 {
     public function show()
     {
+      $this->activeModule('isu_design');
+
       $system_infos = SystemInfo::find(1);
       $isu_design = [
         'body' => $system_infos->about_body,

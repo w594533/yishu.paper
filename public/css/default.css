@@ -1,0 +1,17 @@
+.default-mobile-img{
+            display: none;
+        }
+        .default-bottom {
+          display: none;
+        }
+        @media screen and (max-width: 768px){
+            .default-mobile-img{
+                display: block;
+            }
+            .default-video{
+                display: none;
+            }
+            .default-bottom{
+                bottom: -25px;
+            }
+        }

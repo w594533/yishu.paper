@@ -13,10 +13,23 @@
 .clique-section1-img-txt-left-top-content-time {
   padding: 10px;
 }
+
+.clique-section2-pagination-txt div.active {
+  color: #f3ba1f;
+}
 @media screen and (max-width: 768px) {
   .clique-section1-img-txt-left-top-content-time {
     /*width: auto;
     height:  auto;
     padding: 0 10px;*/
+  }
+}
+@media screen and (max-width: 640px) {
+  .clique-section2-pagination-txt {
+    width: 100%;
+    justify-content: center;
+  }
+  .clique-section2-pagination-txt div {
+    margin: 0px 20px;
   }
 }

@@ -135,7 +135,7 @@
               </div>
               <div class="clique-section2-pagination-txt">
                 @foreach ($equipments as $list)
-                  <div>{{ $list['title'] }}</div>
+                  <div class="@if ($loop->first) active @endif">{{ $list['title'] }}</div>
                 @endforeach
               </div>
               <div class="swiper-container" id="swiper2">
@@ -217,15 +217,19 @@
           </div>
           <script>
           $(function () {
-              // var swiper1 = new Swiper('#swiper1', {
-              //     pagination: '.swiper-pagination',
-              //     paginationClickable: true,
-              //     autoplay: 5000
-              // });
               var swiper2 = new Swiper('#swiper2', {
                   pagination: '.index-section1-pagination2',
                   paginationClickable: true,
-                  uniqueNavElements: false
+                  uniqueNavElements: false,
+                  onSlideChangeEnd: function(swiper){
+                    $(".clique-section2-pagination-txt div").eq(swiper.activeIndex).addClass('active').siblings().removeClass('active');
+                  }
+              });
+
+              $(".clique-section2-pagination-txt div").on("click", function() {
+                var index = $(this).index();
+                $(this).addClass('active').siblings().removeClass('active');
+                swiper2.slideTo(index, 1000, false);//切换到第一个slide，速度为1秒
               });
           });
           </script>

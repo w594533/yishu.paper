@@ -5,12 +5,14 @@ namespace App\Http\Controllers\Frontend;
 use Illuminate\Http\Request;
 use App\Http\Controllers\FrontendController;
 use App\Models\Post;
+use App\Models\ProductCategory;
 
 
 class HomeController extends FrontendController
 {
     public function show()
     {
+      $this->activeModule('home');
       $banners = \App\Models\Banner::where("id", 1)->pluck("image")->first();
       $iconlist = [
           [
@@ -51,15 +53,9 @@ class HomeController extends FrontendController
           ]
       ];
       $equipments = $this->getEquipmentList();
-      // foreach ($equipments as $key => $equipment) {
-      //   dd($equipment['list']);
-      //   foreach ($equipment as $key => $value) {
-      //     // dd($value[''])
-      //   }
-      // }
-      //dd($equipments);
       $news = Post::orderBy('created_at', 'desc')->take(6)->get();
-      return view('frontend.home', compact('banners', 'iconlist', 'equipments', 'news'));
+      $products = ProductCategory::where('parent_id',0)->whereNotNull("image")->select("id", "title", "image", "description")->take(5)->get();
+      return view('frontend.home', compact('banners', 'iconlist', 'equipments', 'news', 'products'));
     }
 
 

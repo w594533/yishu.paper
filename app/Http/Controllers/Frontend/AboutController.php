@@ -9,6 +9,8 @@ class AboutController extends FrontendController
 {
     public function show()
     {
+      $this->activeModule('about');
+
       $banners = \App\Models\Banner::where("id", 4)->pluck("image")->first();
       $companyhistory = \DB::table('company_histories')->orderBy('id', 'asc')->select('title', 'year', 'body')->get();
 

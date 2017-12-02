@@ -46,8 +46,11 @@
       'news_industry' => 'Industry Dynamics'
     ],
     'enter_isudesign' => 'Enter To Isu Design',
+    'enter_site' => 'Enter To Tthpaper',
     'tel' => 'Tel',
     'email' => 'Email',
+    'fax' => 'Fax',
+    'address' => 'Addr',
     'prev_post' => 'Prev',
     'next_post' => 'Next',
     'nav' => [

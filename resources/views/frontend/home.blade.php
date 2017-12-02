@@ -167,104 +167,27 @@
               <div class="index-section2-hr">
                   <div class="index-section2-hr-big"></div>
               </div>
-              {{-- <div class="index-section2-img-teams">
-                  <div class="index-section2-img-left-box">
-                      <div class="index-section2-img-left-more">
-                          <div class="index-section2-img-left-more1">
-                              <div><img :src="is2imgs[0]" alt=""></div>
-                          </div>
-                          <div class="index-section2-img-left-more2">
-                              <div><img :src="is2imgs[1]" alt=""></div>
-                          </div>
-                          <div class="index-section2-img-left-more3">
-                              <div><img :src="is2imgs[2]" alt=""></div>
-                          </div>
-                      </div>
-                      <div class="index-section2-img-left">
-                          <div><img :src="is2imgs[3]" alt=""></div>
-                      </div>
-                  </div>
-
-                  <div class="index-section2-img-show-box">
-                      <div class="displayflex index-section2-left-img">
-                          <img id="index_section2_left" style="margin: auto;cursor: pointer"
-                               src="imgs/index-section2-left.jpg"
-                               alt="">
-                      </div>
-
-                      <div class="index-section2-img-now">
-                          <div class="index-section2-img-now-img">
-                              <img :src="is2imgs[4]" alt=""></div>
-                          <div class="index-section2-img-bac">
-                              <img src="imgs/index-section2-bacimg.jpg" alt="">
-                          </div>
-                          <div class="index-section2-img-now-txt">
-                              <div class="index-section2-img-now-txt-box">
-                                  <div class="index-section2-img-now-txt-title">全木浆系列100%VIR PULP SERLES:</div>
-                                  <div class="index-section2-img-now-txt-hr"></div>
-                                  <div class="index-section2-img-now-txt-txt" v-html="is2Text">
-                                  </div>
-                              </div>
-
-                          </div>
-                      </div>
-
-                      <div class="displayflex index-section2-right-img">
-                          <img id="index_section2_right" style="margin: auto;cursor: pointer"
-                               src="imgs/index-section2-right.jpg"
-                               alt="">
-                      </div>
-                  </div>
-
-                  <div class="index-section2-img-right-box">
-                      <div class="index-section2-img-right">
-                          <div><img :src="is2imgs[5]" alt=""></div>
-                      </div>
-                      <div class="index-section2-img-right-more">
-                          <div class="index-section2-img-right-more1">
-                              <div><img :src="is2imgs[6]" alt=""></div>
-                          </div>
-                          <div class="index-section2-img-right-more2">
-                              <div><img :src="is2imgs[7]" alt=""></div>
-                          </div>
-                          <div class="index-section2-img-right-more3">
-                              <div><img :src="is2imgs[8]" alt=""></div>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="index-section2-img-show-box-mobile">
-                      <div class="displayflex index-section2-left-img">
-                          <img id="index_section2_mobile_control_left" style="margin: auto;cursor: pointer"
-                               src="imgs/index-section2-left.jpg" alt="">
-                      </div>
-
-                      <div class="index-section2-img-now index-section2-img-now-mobile-img">
-                          <div class="index-section2-img-show-box-mobile-show-img-box">
-                              <div class="index-section2-left">
-                                  <img :src="is2imgs[3]" alt=""></div>
-                              <div class="index-section2-now">
-                                  <img :src="is2imgs[4]" alt=""></div>
-                              <div class="index-section2-right">
-                                  <img :src="is2imgs[5]" alt=""></div>
-                          </div>
-                          <div class="index-section2-img-bac" style="">
-                              <img src="imgs/index-section2-bacimg.jpg" alt="">
-                          </div>
-                          <div class="index-section2-img-now-txt">
-                              <div class="index-section2-img-now-txt-title">全木浆系列100%VIRGIN PULP SERIES:</div>
-                              <div class="index-section2-img-now-txt-hr"></div>
-                              <div class="index-section2-img-now-txt-txt" v-html="is2Text"></div>
-                          </div>
-                      </div>
-
-                      <div class="displayflex index-section2-right-img">
-                          <img id="index_section2_mobile_control_right" style="margin: auto;cursor: pointer"
-                               src="imgs/index-section2-right.jpg" alt="">
-                      </div>
-                  </div>
-              </div> --}}
           </div>
+          <div class="pc-banner">
+            <div class="swiper-container" id="swiper-product">
+              <div class="swiper-wrapper">
+                @foreach ($products as $product)
+                  <div class="swiper-slide @if ($loop->first) swiper-slide-center none-effect @endif">
+                    <a href="javascript:void(0)">
+                      <img src="{{$product->image[0]}}" >
+                      @if (strip_tags($product->description))
+                        <div class="product-description">
+                          <div class="title">{{$product->title}}</div>
+                          <div class="text">{!! strip_tags($product->description, '<p><br/><br>') !!}</div>
+                        </div>
+                      @endif
+                    </a>
+                  </div>
+                @endforeach
+              </div>
+            </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div></div>
           <div class="index-section3">
               <div class="index-section3-title-top">
                   <div class="index-section1-title-text">
@@ -347,6 +270,27 @@
               paginationClickable: true,
               uniqueNavElements: false
           });
+          var swiper_product = new Swiper('#swiper-product', {
+            // autoplay:5000,
+            speed:2000,
+            autoplayDisableOnInteraction : false,
+            loop:true,
+            centeredSlides : true,
+            slidesPerView:4,
+            // pagination : '.swiper-pagination',
+            paginationClickable:true,
+            prevButton:'.swiper-button-prev',
+            nextButton:'.swiper-button-next',
+            onInit:function(swiper){
+              swiper.slides[4].className="swiper-slide swiper-slide-active";//第一次打开不要动画
+            },
+            breakpoints: {
+              960: {
+                slidesPerView: 1,
+              }
+            }
+          });
+
       });
       $(function () {
           $('.index-section3-left-news-foo').on('click', function () {
