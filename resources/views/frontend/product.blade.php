@@ -3,86 +3,133 @@
   <link rel="stylesheet" href="/css/product.css">
 @endsection
 @section('content')
-  <div class="content">
-    <div class="index-nav-img">
-                <div>
-                    <img style="width: 100%" src="{{$banners[0]}}" alt="">
-                </div>
-            </div>
-            <div class="product-section1">
-                <div class="product-img-teams">
-                    <div class="product-img-teams-ul-box">
-                        <div class="product-img-teams-left-text">
-                            <ul>
-                              @foreach ($products as $product)
-                                <li><span class="active">{{ $product->title }}</span></li>
-                              @endforeach
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="product-img-teams-right-imgs">
-                        <div>
-                            <div class="product-img-teams-right-imgs-class ">
-                                <span class="active" v-cloak>{{class1}}</span>
-                                <span v-cloak>{{class2}}</span>
-                                <span v-cloak>{{class3}}</span>
-                                <span v-cloak>{{class4}}</span>
-                                <span v-cloak>{{class5}}</span>
-                                <span v-cloak>{{class6}}</span>
-                            </div>
-                            <div class="product-img-teams-right-imgs-box product-img-teams-right-imgs-box1">
-                                <div class="product-img-teams-right-imgs-box1-leftimg">
-                                    <div class="product-section1-img-big">
-                                        <img class="product-section1-img-big-left" src="http://api.cn.tthpaper.com/storage/upload/products/image/b6d9fc8af149b91d7ea713a4c31df093.jpg"
-                                             alt="">
-                                        <img class="product-section1-img-big-now" src="http://api.cn.tthpaper.com/storage/upload/products/image/b6d9fc8af149b91d7ea713a4c31df093.jpg"
-                                             alt="">
-                                        <img class="product-section1-img-big-right" src="http://api.cn.tthpaper.com/storage/upload/products/image/b6d9fc8af149b91d7ea713a4c31df093.jpg"
-                                             alt="">
-                                    </div>
-                                    <div class="product-bac-img"
-                                         style="width:100%;height:100%;position: absolute;top: 0;opacity: 0">
-                                        <img src="imgs/index-section2-bacimg.jpg" alt="">
-                                    </div>
-                                    <div style="opacity: 0" class="product-img-alt" v-html="productImgAlt">
-                                    </div>
-                                </div>
-                                <div class="product-img-teams-right-imgs-box1-rightbox">
-                                    <div class="product-img-teams-right-imgs-box1-rightbox1">
-                                        <div class="img-box product-section1-img1">
-                                            <img src="http://api.cn.tthpaper.com/storage/upload/products/image/b6d9fc8af149b91d7ea713a4c31df093.jpg"
-                                                 alt="">
-                                            <div class="magnifying">
-                                                <img src="imgs/magnifying.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="img-box product-section1-img2">
-                                            <img src="http://api.cn.tthpaper.com/storage/upload/products/image/de62e0c4e6256ebd872075028bdc8021.jpg"
-                                                 alt="">
-                                            <div class="magnifying">
-                                                <img src="imgs/magnifying.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product-img-teams-right-imgs-box1-rightbox2">
-                                        <div class="img-box product-section1-img3">
-                                            <img src="http://api.cn.tthpaper.com/storage/upload/products/image/e65caebc5ce9c03bd8670d4318fc8daf.jpg"
-                                                 alt="">
-                                            <div class="magnifying">
-                                                <img src="imgs/magnifying.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-imgs-control">
-                                <img class="prev" src="imgs/index-section2-left.jpg" alt="">
-                                <img class="next" src="imgs/index-section2-right.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="index-nav-img">
+    <div>
+      <img style="width: 100%" src="{{$banners[0]}}" alt="">
+    </div>
   </div>
+  <div class="product-content">
+    <div class="product-section1">
+      <div class="product-img-teams">
+        <div class="product-lists">
+          <div class="product-img-teams-ul-box">
+            <div class="product-img-teams-left-text">
+              <ul>
+                @foreach ($product_categories as $product_category)
+                  <li class="tab" data-id="{{$product_category->id}}"><span class="@if ($product_category->id == $parent_product_category_id) active @endif">{{ $product_category->title }}</span></li>
+                  @endforeach
+                </ul>
+              </div>
+            </div>
 
+            <div class="product-img-teams-right-imgs">
+              <div class="sub-category">
+                <ul>
+                  @foreach ($products->childrenCategories as $product)
+                    <li data-id="{{$product->id}}" class="tab @if ($product->id == $child_product_category_id) active @endif">{{ $product->title }}</li>
+                    @endforeach
+                  </ul>
+                </div>
+                @if (count($images) >0)
+                  <div class="product-img-teams-right-imgs-box product-img-teams-right-imgs-box1">
+                    <div class="product-img-teams-right-imgs-box1-leftimg">
+                      <a href="javascript:void(0)">
+                        <img src="{{ Storage::url($images[0]) }}" >
+                        @if (strip_tags($products->description))
+                          <div class="product-description">
+                            <div class="text">{!! strip_tags($products->description, '<p><br/><br>') !!}</div>
+                            </div>
+                          @endif
+                        </a>
+                      </div>
+                    </div>
+                  @endif
+                  <div class="product-img-teams-right-imgs-box1-rightbox">
+                    @foreach ($images as $key => $image)
+                      @if (($key+1) > 4)
+                        @break
+                      @endif
+                      <div class="img-box product-section1-img1">
+                        <img src="{{ Storage::url($image) }} " alt="">
+                        <div class="magnifying">
+                          <img src="/img/magnifying.png" alt="">
+                        </div>
+                      </div>
+                    @endforeach
+                  </div>
+                  <div class="imgs-list">
+                    <div class="product-img-teams-right-imgs-box1-rightbox">
+                      @foreach ($images as $key => $image)
+                        <div class="img-box product-section1-img1 @if (($key+1) <= 4) special-img @endif">
+                          <img src="{{ Storage::url($image)}} " alt="">
+                          <div class="magnifying">
+                            <img src="/img/magnifying.png" alt="">
+                          </div>
+                        </div>
+                      @endforeach
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          @if (count($images) >0)
+          <div class="pc-banner">
+            <div class="swiper-container" id="swiper-product">
+              <div class="swiper-wrapper">
+                @foreach ($images as $image)
+                  <div class="swiper-slide @if ($loop->first) swiper-slide-center none-effect @endif">
+                    <a href="javascript:void(0)">
+                      <img src="{{ Storage::url($image) }}" >
+                      @if (strip_tags($products->description))
+                        <div class="product-description">
+                          {{-- <div class="title">{{$products->title}}</div> --}}
+                          <div class="text">{!! strip_tags($products->description, '<p><br/><br>') !!}</div>
+                          </div>
+                        @endif
+                      </a>
+                    </div>
+                  @endforeach
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            @endif
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+    $(function() {
+      $(".img-box").on('click', function() {
+        var img_src = $(this).find("img").first().attr("src");
+        $(".product-img-teams-right-imgs-box1-leftimg").find("img").attr("src", img_src);
+      })
+      var swiper_product = new Swiper('#swiper-product', {
+        // autoplay:5000,
+        speed:2000,
+        autoplayDisableOnInteraction : false,
+        loop:true,
+        centeredSlides : true,
+        slidesPerView:4,
+        // pagination : '.swiper-pagination',
+        paginationClickable:true,
+        prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next',
+        onInit:function(swiper){
+          swiper.slides[4].className="swiper-slide swiper-slide-active";//第一次打开不要动画
+        },
+        breakpoints: {
+          960: {
+            slidesPerView: 1,
+          }
+        }
+      });
+      $(".tab").on("click", function() {
+        var id = $(this).data("id");
+        location.href="/product?id="+id;
+      })
+    })
+  </script>
 @endsection

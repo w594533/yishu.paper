@@ -39,6 +39,7 @@ Route::group(['namespace' => 'Frontend'], function() {
   Route::get('news/{post}', 'NewsController@show')->name('news.show');
 
   Route::get('product', 'ProductController@show')->name('product');
+  Route::get('ajaxproduct', 'ProductController@ajaxshow')->name('product.ajaxshow');
 
   Route::get('about', 'AboutController@show')->name('about');
   Route::get('isu_design', 'IsuDesignController@show')->name('isu_design');

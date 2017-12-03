@@ -174,7 +174,7 @@
                 @foreach ($products as $product)
                   <div class="swiper-slide @if ($loop->first) swiper-slide-center none-effect @endif">
                     <a href="javascript:void(0)">
-                      <img src="{{$product->image[0]}}" >
+                      <img src="{{ Storage::url($product->image[0]) }}" >
                       @if (strip_tags($product->description))
                         <div class="product-description">
                           <div class="title">{{$product->title}}</div>
@@ -187,7 +187,8 @@
               </div>
             </div>
               <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div></div>
+              <div class="swiper-button-next"></div>
+            </div>
           <div class="index-section3">
               <div class="index-section3-title-top">
                   <div class="index-section1-title-text">
