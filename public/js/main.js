@@ -51,14 +51,14 @@ function system(self, data) {
     self.footerEmail = data.keys.email;
 };
 $(function () {
-    if (localStorage.getItem("key") === 'cn') {
-        $('.index-section4').css('font-size', '16px');
-        $('.nav-list > ul').css('font-size', '16px');
-    } else if (localStorage.getItem("key") === 'en') {
-        $('.index-section4').css('font-size', '12px');
-        $('.nav-list > ul').css('font-size', '12px');
-    } else {
-        $('.index-section4').css('font-size', '16px');
-        $('.nav-list > ul').css('font-size', '16px');
-    }
+    // if (localStorage.getItem("key") === 'cn') {
+    //     // $('.index-section4').css('font-size', '16px');
+    //     // $('.nav-list > ul').css('font-size', '16px');
+    // } else if (localStorage.getItem("key") === 'en') {
+    //     $('.index-section4').css('font-size', '12px');
+    //     $('.nav-list > ul').css('font-size', '12px');
+    // } else {
+    //     $('.index-section4').css('font-size', '16px');
+    //     $('.nav-list > ul').css('font-size', '16px');
+    // }
 });
