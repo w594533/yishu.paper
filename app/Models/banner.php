@@ -17,7 +17,7 @@ class Banner extends Model
   {
     if ($image) {
       return array_map(function($value) {
-        return config('app.url'). '/storage/'. $value;
+        return $value;
       }, json_decode($image, true));
     } else {
       return [];

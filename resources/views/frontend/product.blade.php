@@ -5,7 +5,7 @@
 @section('content')
   <div class="index-nav-img">
     <div>
-      <img style="width: 100%" src="{{$banners[0]}}" alt="">
+      <img style="width: 100%" src="{{Storage::url($banners[0])}}" alt="">
     </div>
   </div>
   <div class="product-content">

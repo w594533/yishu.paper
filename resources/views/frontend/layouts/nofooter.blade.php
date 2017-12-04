@@ -17,7 +17,7 @@
       <script src="/js/main.js"></script>
       @yield('css')
       @yield('js')
-      <title>@yield('title', $meta_title)|一树纸业</title>
+      <title>@yield('title', $meta_title)</title>
 </head>
 <body class="{{$lang_class}} @yield('body_class')">
   <div class="maxvw @yield('firstdiv_class')" id="@yield('firstdiv_id')">

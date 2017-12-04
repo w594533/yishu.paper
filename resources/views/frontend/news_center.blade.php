@@ -7,7 +7,7 @@
 
   <div class="index-nav-img">
             <div>
-                <img style="width: 100%" src="{{$banners[0]}}" alt="">
+                <img style="width: 100%" src="{{Storage::url($banners[0])}}" alt="">
             </div>
             <div class="index-nav-img-bac"></div>
             <div class="index-nav-img-alt">
@@ -92,7 +92,7 @@
                         @foreach ($posts_media as $media)
 
                             <div data-url="{{route('news.show', ['post' => $media])}}" class=" news-btn news-section2-img">
-                                <img src="{{ $media->cover }}" alt="">
+                                <img src="{{ Storage::url($media->cover) }}" alt="">
                                 <div class="news-section2-img-alt">
                                     <span class="news-section1-left-text-title">{{ str_limit($media->name, 50) }}</span>
                                     <p class="news-section1-left-text-txt">{{ str_limit(strip_tags($media->slug), 100) }}</p>

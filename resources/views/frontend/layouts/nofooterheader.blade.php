@@ -19,7 +19,7 @@
       <script src="/js/main.js"></script>
       @yield('css')
       @yield('js')
-      <title>@yield('title', $meta_title)|一树纸业</title>
+      <title>@yield('title', $meta_title)</title>
 </head>
 <body class="{{$lang_class}}">
   @yield('content')

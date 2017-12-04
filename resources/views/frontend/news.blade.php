@@ -7,7 +7,7 @@
   <div class="content">
     <div class="index-nav-img">
             <div>
-                <img style="width: 100%" src="{{$banners[0]}}" alt="">
+                <img style="width: 100%" src="{{Storage::url($banners[0])}}" alt="">
             </div>
     </div>
 
@@ -30,7 +30,7 @@
                 <div data-url="{{route('news.show', ['post' => $post])}}" class="media-section1-content-box">
                     <div class="media-section1-content-box-left">
                         <div class="media-section1-content-box-img">
-                            <img src="{{$post->cover}}" alt=""></div>
+                            <img src="{{Storage::url($post->cover)}}" alt=""></div>
                         <div class="media-section1-content-box-time">
                             <div class="media-section1-content-box-day">{{ date("d", strtotime($post->created_at)) }}</div>
                             <div class="media-section1-content-box-year">{{ date("Y-m", strtotime($post->created_at)) }}</div>
