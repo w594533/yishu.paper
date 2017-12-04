@@ -11,8 +11,6 @@
       <link rel="stylesheet" href="/css/normalize.css">
       <link rel="stylesheet" href="/css/swiper.min.css">
       <link rel="stylesheet" href="/css/main.css">
-      <script src="/js/vue.js"></script>
-      <script src="/js/axios.min.js"></script>
       <script src="/js/jquery-3.2.1.min.js"></script>
       <script src="/js/swiper.jquery.min.js"></script>
       <script src="/js/moment.min.js"></script>

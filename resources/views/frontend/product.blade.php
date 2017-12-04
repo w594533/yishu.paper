@@ -49,7 +49,7 @@
                       @if (($key+1) > 4)
                         @break
                       @endif
-                      <div class="img-box product-section1-img1">
+                      <div class="img-box product-section1-img1 spec-img-box_{{$key}}">
                         <img src="{{ Storage::url($image) }} " alt="">
                         <div class="magnifying">
                           <img src="/img/magnifying.png" alt="">

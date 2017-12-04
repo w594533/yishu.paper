@@ -4,7 +4,7 @@
               <li class="{{isset($active['home'])?$active['home']:''}}"><a href="{{action('Frontend\HomeController@show')}}">{{ __('home.nav.home') }}</a></li>
               <li class="{{isset($active['product'])?$active['product']:''}}"><a href="{{action('Frontend\ProductController@show')}}">{{ __('home.nav.product') }}</a></li>
               <li class="{{isset($active['about'])?$active['about']:''}}"><a href="{{action('Frontend\AboutController@show')}}">{{ __('home.nav.company') }}</a></li>
-              <li class="{{isset($active['design'])?$active['design']:''}}"><a href="{{action('Frontend\IsuDesignController@show')}}">{{ __('home.nav.isu_design') }}</a></li>
+              <li class="{{isset($active['isu_design'])?$active['isu_design']:''}}"><a href="{{action('Frontend\IsuDesignController@show')}}">{{ __('home.nav.isu_design') }}</a></li>
               <li class="{{isset($active['news'])?$active['news']:''}}"><a href="{{action('Frontend\NewsController@center')}}">{{ __('home.nav.news') }}</a></li>
               <li class="{{isset($active['contact'])?$active['contact']:''}}"><a href="{{action('Frontend\ContactController@show')}}">{{ __('home.nav.contact') }}</a></li>
             </ul>
@@ -25,7 +25,7 @@
                       <li class="{{isset($active['home'])?$active['home']:''}}"><a href="{{action('Frontend\HomeController@show')}}">{{ __('home.nav.home') }}</a></li>
                       <li class="{{isset($active['product'])?$active['product']:''}}"><a href="{{action('Frontend\ProductController@show')}}">{{ __('home.nav.product') }}</a></li>
                       <li class="{{isset($active['about'])?$active['about']:''}}"><a href="{{action('Frontend\AboutController@show')}}">{{ __('home.nav.company') }}</a></li>
-                      <li class="{{isset($active['design'])?$active['design']:''}}"><a href="{{action('Frontend\IsuDesignController@show')}}">{{ __('home.nav.isu_design') }}</a></li>
+                      <li class="{{isset($active['isu_design'])?$active['isu_design']:''}}"><a href="{{action('Frontend\IsuDesignController@show')}}">{{ __('home.nav.isu_design') }}</a></li>
                       <li class="{{isset($active['news'])?$active['news']:''}}"><a href="{{action('Frontend\NewsController@center')}}">{{ __('home.nav.news') }}</a></li>
                       <li class="{{isset($active['contact'])?$active['contact']:''}}"><a href="{{action('Frontend\ContactController@show')}}">{{ __('home.nav.contact') }}</a></li>
                     </ul>
