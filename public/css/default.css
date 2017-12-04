@@ -1,18 +1,40 @@
 .default-mobile-img{
             display: none;
-        }
-        .default-bottom {
-          display: none;
-        }
-        @media screen and (max-width: 768px){
-            .default-mobile-img{
-                display: block;
-            }
-            .default-video{
-                display: none;
-            }
-            .default-bottom{
-              display: flex;
-                bottom: -25px;
-            }
-        }
+}
+.default-bottom {
+  display: none;
+}
+.default-mobile {
+  display: none;
+}
+@media screen and (max-width: 768px){
+    .default-mobile-img{
+        display: block;
+    }
+    .default-video{
+        display: none;
+    }
+    .default-pc {
+      display: none;
+    }
+    .default-mobile {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .default-mobile .default-bottom {
+      position: relative;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin: 0 auto;
+    }
+    .default-mobile img {
+      width: 250px;
+    }
+    .default-bottom{
+        display: flex;
+        bottom: -25px;
+    }
+}
