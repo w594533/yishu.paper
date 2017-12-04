@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'FZLanTingHeiS-DB1-GB';
-    src: url('../font/FZLTZCHJW--GB1-0.eot');
-    src: url('../font/FZLTZCHJW--GB1-0.eot?#iefix') format('embedded-opentype'),
-    url('../font/FZLTZCHJW--GB1-0.woff2') format('woff2'),
-    url('../font/FZLTZCHJW--GB1-0.woff') format('woff'),
-    url('../font/FZLTZCHJW--GB1-0.ttf') format('truetype'),
-    url('../font/FZLTZCHJW--GB1-0.svg#FZLTZCHJW--GB1-0') format('svg');
+    src: url('http://site-share.oss-cn-beijing.aliyuncs.com/font/FZLTZCHJW--GB1-0.eot');
+    src: url('http://site-share.oss-cn-beijing.aliyuncs.com/font/FZLTZCHJW--GB1-0.eot?#iefix') format('embedded-opentype'),
+    url('http://site-share.oss-cn-beijing.aliyuncs.com/font/FZLTZCHJW--GB1-0.woff2') format('woff2'),
+    url('http://site-share.oss-cn-beijing.aliyuncs.com/font/FZLTZCHJW--GB1-0.woff') format('woff'),
+    url('http://site-share.oss-cn-beijing.aliyuncs.com/font/FZLTZCHJW--GB1-0.ttf') format('truetype'),
+    url('http://site-share.oss-cn-beijing.aliyuncs.com/font/FZLTZCHJW--GB1-0.svg#FZLTZCHJW--GB1-0') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -2946,7 +2946,7 @@ a{
     }
     .enter{
         box-sizing: border-box;
-        width: 150px;
+        /*width: 150px;*/
         height: 35px;
         line-height: 35px;
         text-align: center;
@@ -2955,7 +2955,7 @@ a{
     }
     .default-bottom{
         height: 60px;
-        left: calc(50% - 75px);
+        /*left: calc(50% - 75px);*/
     }
 }
 /*中英文选择end*/

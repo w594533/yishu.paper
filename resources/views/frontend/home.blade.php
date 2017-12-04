@@ -55,9 +55,9 @@
                               controls="controls"
                               poster="/img/poster.jpg"
                               class="index-section1-video-video">
-                          <source src="/video/paper.m4v" type="video/mp4">
-                          <source src="/video/paper.ogv" type="video/ogg">
-                          <source src="/video/paper.webm" type="video/webm">
+                          <source src="http://site-share.oss-cn-beijing.aliyuncs.com/video/paper.m4v" type="video/mp4">
+                          <source src="http://site-share.oss-cn-beijing.aliyuncs.com/video/paper.ogv" type="video/ogg">
+                          <source src="http://site-share.oss-cn-beijing.aliyuncs.com/video/paper.webm" type="video/webm">
                       </video>
                   </div>
                   <div class="displayflex">

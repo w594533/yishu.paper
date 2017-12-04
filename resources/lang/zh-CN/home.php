@@ -22,6 +22,7 @@
     "news_title" => "新闻中心",
     "news_subtitle" => "与国际接轨，提供最高品质",
     "newest" => '最新',
+    'more_news' => '更多资讯',
     'company_hisgory' => [
       'company_title' => '集团简介',
       'equipment' => [

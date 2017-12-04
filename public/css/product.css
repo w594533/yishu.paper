@@ -50,7 +50,8 @@
 .product-img-teams-right-imgs-box1-leftimg a:hover .product-description {
   background: #F4CA36;
   opacity: 0.9;
-  display: block;
+  display: flex;
+  align-items: center;
 }
 .product-description {
   position: absolute;
@@ -79,7 +80,8 @@
 .swiper-slide-active a:hover .product-description {
   background: #F4CA36;
   opacity: 0.9;
-  display: block;
+
+
 }
 
 .special-img {
@@ -376,5 +378,6 @@
 .swiper-slide-active a:hover .product-description {
   background: #F4CA36;
   opacity: 0.9;
-  display: block;
+  display: flex;
+  align-items: center;
 }

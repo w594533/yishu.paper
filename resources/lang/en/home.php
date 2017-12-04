@@ -28,6 +28,7 @@
     "news_title" => "News",
     "news_subtitle" => "In line with international standards,to provide the highest quality",
     "newest" => 'Latest',
+    'more_news' => "More News",
     'company_hisgory' => [
       'company_title' => 'Group profile',
       'equipment' => [

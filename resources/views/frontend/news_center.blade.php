@@ -50,7 +50,7 @@
                         </div>
                     </div>
                     <div class="news-section1-content-more">
-                        <span><a style="color: #fff" href="{{route('news.list')}}">更多资讯</a></span>
+                        <span><a style="color: #fff" href="{{route('news.list')}}">{{ __("home.more_news") }}</a></span>
                     </div>
                   @endforeach
 

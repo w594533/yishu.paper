@@ -284,7 +284,9 @@
 .swiper-slide-active a:hover .product-description {
   background: #F4CA36;
   opacity: 0.9;
-  display: block;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .product-description {
   position: absolute;

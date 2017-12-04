@@ -5,9 +5,9 @@
 @section('content')
   <div class="default-section1">
     <video id="default-video" class="default-video" autoplay poster="/img/poster.jpg" preload="auto">
-        <source src="/video/default.m4v" type="video/mp4">
-        <source src="/video/default.ogv" type="video/ogg">
-        <source src="/video/default.webm" type="video/webm">
+        <source src="http://site-share.oss-cn-beijing.aliyuncs.com/video/default.m4v" type="video/mp4">
+        <source src="http://site-share.oss-cn-beijing.aliyuncs.com/video/default.ogv" type="video/ogg">
+        <source src="http://site-share.oss-cn-beijing.aliyuncs.com/video/default.webm" type="video/webm">
     </video>
     <img class="default-mobile-img" style="width: 100vw" src="/img/poster.jpg" alt="">
     <div class="default-bottom">
