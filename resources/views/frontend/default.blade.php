@@ -11,7 +11,7 @@
           <source src="http://site-share.oss-cn-beijing.aliyuncs.com/video/default.webm" type="video/webm">
       </video>
       <div class="default-bottom">
-          <div class="enter"><a href="{{$system_infos->cn_site}}">{{ __("home.enter_site") }}</a></div>
+          <div class="enter"><a href="{{route('home')}}">{{ __("home.enter_site") }}</a></div>
           <div class="change">
               <span class="default-en"><a href="{{$system_infos->en_site}}">En</a></span> / <span class="default-cn"><a href="{{$system_infos->cn_site}}">中文</a></span>
           </div>
@@ -21,7 +21,7 @@
       <div class="default-mobile-innner">
         <img src="/img/default.jpg"/>
         <div class="default-bottom">
-            <div class="enter"><a href="{{$system_infos->cn_site}}">{{ __("home.enter_site") }}</a></div>
+            <div class="enter"><a href="{{route('home')}}">{{ __("home.enter_site") }}</a></div>
             <div class="change">
                 <span class="default-en"><a href="{{$system_infos->en_site}}">En</a></span> / <span class="default-cn"><a href="{{$system_infos->cn_site}}">中文</a></span>
             </div>
