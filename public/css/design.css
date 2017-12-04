@@ -1,0 +1,10 @@
+.nav-active {
+  background: none;
+}
+.nav-list > ul > .nav-active > a  {
+  color: #1a9edc;
+}
+
+body.body_en .design-txt2 {
+  line-height: 30px;
+}
