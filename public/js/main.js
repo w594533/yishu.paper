@@ -57,7 +57,6 @@ $(function () {
     } else if (localStorage.getItem("key") === 'en') {
         $('.index-section4').css('font-size', '12px');
         $('.nav-list > ul').css('font-size', '12px');
-        $(document.body).css('font-family','arial');
     } else {
         $('.index-section4').css('font-size', '16px');
         $('.nav-list > ul').css('font-size', '16px');

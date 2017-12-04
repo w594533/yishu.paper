@@ -66,15 +66,16 @@
   .business-item {
     width: 45%;
   }
+  .business-item img {
+    width: 100px;
+  }
   .index-section3-news-box {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .business-item img {
-    width: 100px;
-  }
+
 }
 
 .pc-banner {

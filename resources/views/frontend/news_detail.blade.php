@@ -18,14 +18,21 @@
             </div>
             <ul class="news-detail-section1-controls">
               <div class="news-next-prev">
-                <div class="prev news-next-prev-button">
-                  <img src="/img/news-detail-section1-content-control-left-img.jpg" alt="">
-                  <div class="text">{{ __('home.prev_post') }}：xxxxxx</div>
-                </div>
-                <div class="next news-next-prev-button">
-                  <div class="text">{{ __('home.next_post') }}：xxxxxx</div>
-                  <img src="/img/news-detail-section1-content-control-right-img.jpg" alt="">
-                </div>
+                @if ($prev_post)
+                  <div class="prev news-next-prev-button">
+                    <img src="/img/news-detail-section1-content-control-left-img.jpg" alt="">
+                    <div class="text">
+                      <a href="{{route('news.show', ['post' => $prev_post])}}">{{ __('home.prev_post') }}：{{$prev_post->name}}</a>
+                    </div>
+                  </div>
+                @endif
+                @if ($next_post)
+                  <div class="next news-next-prev-button">
+                    <div class="text"><a href="{{route('news.show', ['post' => $next_post])}}">{{ __('home.next_post') }}：{{$next_post->name}}</a></div>
+                    <img src="/img/news-detail-section1-content-control-right-img.jpg" alt="">
+                  </div>
+                @endif
+
               </div>
             </ul>
         </div>

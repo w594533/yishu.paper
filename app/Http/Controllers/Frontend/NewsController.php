@@ -17,7 +17,9 @@ class NewsController extends FrontendController
 
   public function show(Post $post)
   {
-    return view('frontend.news_detail', compact('post'));
+    $prev_post = Post::where("id", ">", $post->id)->orderBy('id', 'asc')->first();
+    $next_post = Post::where("id", "<", $post->id)->orderBy('id', 'desc')->first();
+    return view('frontend.news_detail', compact('post', 'prev_post', 'next_post'));
   }
 
   public function toShowList(Request $request)

@@ -12,6 +12,7 @@
                 display: none;
             }
             .default-bottom{
+              display: flex;
                 bottom: -25px;
             }
         }

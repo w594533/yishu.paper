@@ -11,9 +11,9 @@
     </video>
     <img class="default-mobile-img" style="width: 100vw" src="/img/poster.jpg" alt="">
     <div class="default-bottom">
-        <div class="enter"><a href="{{$result['isudesign_site']}}">{{ __("home.enter_site") }}</a></div>
+        <div class="enter"><a href="{{$system_infos->cn_site}}">{{ __("home.enter_site") }}</a></div>
         <div class="change">
-            <span class="default-en">En</span> / <span class="default-cn">中文</span>
+            <span class="default-en"><a href="{{$system_infos->en_site}}">En</a></span> / <span class="default-cn"><a href="{{$system_infos->cn_site}}">中文</a></span>
         </div>
     </div>
 </div>
