@@ -86,6 +86,8 @@ class SystemInfoController extends Controller
             $grid->id('ID')->sortable();
             $grid->phone('电话');
             $grid->email('邮箱');
+            $grid->cn_site('中文网址');
+            $grid->en_site('英文网址');
 
 
         });
@@ -104,6 +106,8 @@ class SystemInfoController extends Controller
             $form->display('id', 'ID');
             $form->text('phone', '电话');
             $form->email('email', '邮箱');
+            $form->url('cn_site', '中文网址');
+            $form->url('en_site', '英文网址');
           })->tab('一树设计信息', function ($form){
             $form->text('isudesign_site', '官网地址');
             $form->textarea('about_body', '介绍');

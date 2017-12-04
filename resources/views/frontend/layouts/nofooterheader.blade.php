@@ -21,7 +21,7 @@
       @yield('js')
       <title>@yield('title', $meta_title)|一树纸业</title>
 </head>
-<body class="@yield('body_class')">
+<body class="{{$lang_class}}">
   @yield('content')
 </body>
 </html>

@@ -10,6 +10,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Support\Facades\View;
 use App\Models\Category;
 use App\Models\SystemInfo;
+use App;
 
 class FrontendController extends Controller
 {
@@ -17,12 +18,17 @@ class FrontendController extends Controller
 
     public function __construct()
     {
-
       $meta_description = SystemInfo::pluck('meta_description')->first();
       $meta_keywords = SystemInfo::pluck('meta_keywords')->first();
       $meta_title = SystemInfo::pluck('meta_title')->first();
 
       $system_infos = SystemInfo::find(1);
+      $locale = App::getLocale();
+
+      view::share('website_cn', $system_infos->cn_site.$_SERVER['REQUEST_URI']);
+      view::share('website_en', $system_infos->en_site.$_SERVER['REQUEST_URI']);
+      View::share("locale", $locale);
+      View::share('lang_class', $locale=='zh-CN'?"body_cn":"body_en");
       View::share('meta_description', $meta_description);
       View::share('meta_keywords', $meta_keywords);
       View::share('meta_title', $meta_title);

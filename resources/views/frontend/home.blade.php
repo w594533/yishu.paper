@@ -66,7 +66,7 @@
                           <div class="index-section1-video-text-content">
                               customized
                               <br>
-                              servicesolutions
+                              service solutions
                               <br>
                               for you
                           </div>
@@ -217,7 +217,7 @@
                                     <span class="index-section3-title">{{ $new->name }}</span>
                                     <br>
                                     <p class="f12 index-section3-text">
-                                        {{ str_limit($new->slug, 100) }}
+                                        {{ str_limit(strip_tags($new->slug), 100) }}
                                     </p>
                                 </div>
                             </div>
@@ -269,7 +269,8 @@
           var swiper2 = new Swiper('#swiper2', {
               pagination: '.index-section1-pagination2',
               paginationClickable: true,
-              uniqueNavElements: false
+              uniqueNavElements: false,
+              // effect: 'flip'
           });
           var swiper_product = new Swiper('#swiper-product', {
             // autoplay:5000,

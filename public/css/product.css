@@ -7,7 +7,7 @@
 }
 
 .magnifying {
-  display: none;
+  /*display: none;*/
 }
 
 .product-img-teams {
@@ -88,6 +88,11 @@
 
 .img-box {
   margin: 1% 0;
+  cursor: pointer;
+}
+
+.product-img-teams-right-imgs-box1-rightbox .img-box {
+  margin:0 0 20px 0;
 }
 
 .sub-category {

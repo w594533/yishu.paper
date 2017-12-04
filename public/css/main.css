@@ -19,6 +19,13 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+body.body_cn {
+  font-family: 'FZLanTingHeiS-DB1-GB';
+}
+
+body.body_en {
+  font-family: 'Arial';
+}
 
 ul {
     list-style: none;
@@ -183,9 +190,21 @@ a {
     margin-left: auto;
     margin-right: auto;
     color: #fff;
+    justify-content: space-between;
 }
 .nav-ce-mobile div{
     cursor: pointer;
+    width: 50%;
+    text-align: center;
+}
+.nav-ce-mobile div a {
+  width: 100%;
+  display: block;
+}
+.nav-ce-mobile div.active a {
+  background: #1a9fda;
+  border-radius: 10px;
+  color: #fff;
 }
 
 .maxvw {
@@ -209,13 +228,16 @@ a {
     z-index: 2;
 }
 
-.cn {
+.nav-ce .active {
     flex: 1;
     height: 15px;
     background-color: #1a9edc;
     margin-left: -8px;
     border-radius: 7.5px;
     color: #fff;
+}
+.nav-ce .active a {
+  color: #fff;
 }
 
 .en {
@@ -1106,6 +1128,7 @@ a {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
+    line-height: 20px;
 }
 
 .index-section3-title {

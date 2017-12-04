@@ -11,8 +11,8 @@
       <link rel="stylesheet" href="/css/normalize.css">
       <link rel="stylesheet" href="/css/swiper.min.css">
       <link rel="stylesheet" href="/css/main.css">
-      <script src="/js/vue.js"></script>
-      <script src="/js/axios.min.js"></script>
+      {{-- <script src="/js/vue.js"></script> --}}
+      {{-- <script src="/js/axios.min.js"></script> --}}
       <script src="/js/jquery-3.2.1.min.js"></script>
       <script src="/js/swiper.jquery.min.js"></script>
       <script src="/js/moment.min.js"></script>
@@ -21,7 +21,7 @@
       @yield('js')
       <title>@yield('title', $meta_title)|一树纸业</title>
 </head>
-<body class="@yield('body_class')">
+<body class="{{$lang_class}} @yield('body_class')">
   <div class="maxvw @yield('firstdiv_class')" id="@yield('firstdiv_id')">
     @include('frontend.layouts._header')
     <div class="content">

@@ -21,7 +21,7 @@
       @yield('js')
       <title>@yield('title', $meta_title)|一树纸业</title>
 </head>
-<body class="@yield('body_class')">
+<body class="{{$lang_class}} @yield('body_class')">
   <div class="maxvw @yield('firstdiv_class')" id="@yield('firstdiv_id')">
     @include('frontend.layouts._header')
     <div class="content">

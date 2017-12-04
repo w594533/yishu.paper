@@ -10,8 +10,8 @@
             </ul>
         </div>
         <div class="nav-ce-mobile">
-            <div class="en" @click='en'>En</div>
-            <div class="cn" @click='cn'>中文</div>
+          <div class="en @if ($locale == 'en') active @endif"><a href="{{$website_en}}">En</a></div>
+          <div class="cn @if ($locale == 'zh-CN') active @endif"><a href="{{$website_cn}}">中文</a></div>
         </div>
         <div class="nav-mobile-bac"></div>
 </div>
@@ -31,8 +31,8 @@
                     </ul>
                 </div>
                 <div class="nav-ce">
-                    <div class="en" @click='en'>En</div>
-                    <div class="cn" @click='cn'>中文</div>
+                  <div class="en @if ($locale == 'en') active @endif"><a href="{{$website_en}}">En</a></div>
+                  <div class="cn @if ($locale == 'zh-CN') active @endif"><a href="{{$website_cn}}">中文</a></div>
                 </div>
             </div>
             <div class="nav-bar">

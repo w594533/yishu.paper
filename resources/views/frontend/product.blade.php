@@ -102,10 +102,23 @@
     </div>
     <script>
     $(function() {
-      $(".img-box").on('click', function() {
-        var img_src = $(this).find("img").first().attr("src");
-        $(".product-img-teams-right-imgs-box1-leftimg").find("img").attr("src", img_src);
-      })
+      // $(".img-box").on('click', function() {
+      //   var img_src = $(this).find("img").first().attr("src");
+      //   $(".product-img-teams-right-imgs-box1-leftimg").find("img").attr("src", img_src);
+      // })
+      $('.img-box').on('mouseenter', function () {
+                $(this).find('.magnifying img').animate({
+                    opacity: 1
+                },500)
+            }).on('mouseleave', function () {
+                $(this).find('.magnifying img').animate({
+                    opacity: 0
+                },500)
+      });
+      $('.magnifying').on('click', function () {
+          var img_src = $(this).siblings("img").attr("src");
+          $(".product-img-teams-right-imgs-box1-leftimg").find("img").attr("src", img_src);
+      });
       var swiper_product = new Swiper('#swiper-product', {
         // autoplay:5000,
         speed:2000,

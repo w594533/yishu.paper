@@ -17,6 +17,8 @@ class CreateSystemInfosTable extends Migration
             $table->increments('id');
             $table->string('phone')->index()->coment('总机');
             $table->string('email')->index()->comment('邮箱');
+            $table->string('cn_site')->comment('中文网址');
+            $table->string('en_site')->comment('英文网址');
             $table->text('about_body')->nullable()->comment('一树设计的描述');
             $table->string('isudesign_site')->nullable()->default('')->comment('一树设计的官方网站');
             $table->string('meta_keywords')->default('')->nullable()->comment('关键词');
