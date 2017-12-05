@@ -54,7 +54,7 @@
                               preload="auto"
                               controls="controls"
                               poster="/img/poster.jpg"
-                              class="index-section1-video-video">
+                              class="index-section1-video-video" loop>
                           <source src="http://site-share.oss-cn-beijing.aliyuncs.com/video/paper.m4v" type="video/mp4">
                           <source src="http://site-share.oss-cn-beijing.aliyuncs.com/video/paper.ogv" type="video/ogg">
                           <source src="http://site-share.oss-cn-beijing.aliyuncs.com/video/paper.webm" type="video/webm">
