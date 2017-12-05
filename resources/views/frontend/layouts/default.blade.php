@@ -31,13 +31,11 @@
   </div>
 <script>
 $(function(){
-  // $('.nav-list > ul > li > a').on('mouseenter', function () {
-  //     $('.nav-list > ul > li > a').css('color', '#000');
-  //     $(this).css('color', '#1a9edc');
-  // }).on('mouseleave', function () {
-  //     $('.nav-list > ul > li > a').css('color', '#000');
-  //     $($('.nav-list > ul > li > a')[3]).css('color', '#1a9edc');
-  // });
+  $('.nav-list > ul > li').on('mouseenter', function () {
+      $(this).addClass("nav-hover-active");
+  }).on('mouseleave', function () {
+      $(this).removeClass("nav-hover-active");
+  });
   // var index = $('.nav-active-mobile').index();
   // $('.nav-list-mobile > ul >li').on('mouseenter', function () {
   //     $('.nav-list-mobile > ul >li').removeClass('nav-active-mobile');

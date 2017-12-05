@@ -3,13 +3,13 @@
  */
 function navHover() {
     var index = $('.nav-active').index();
-    $('.nav-list > ul >li').on('mouseenter',function () {
-        $('.nav-list > ul >li').removeClass('nav-active');
-        $(this).addClass('nav-active');
-    }).on('mouseleave',function () {
-        $('.nav-list > ul >li').removeClass('nav-active');
-        $($('.nav-list > ul >li')[index]).addClass('nav-active');
-    });
+    // $('.nav-list > ul >li').on('mouseenter',function () {
+    //     $('.nav-list > ul >li').removeClass('nav-active');
+    //     $(this).addClass('nav-active');
+    // }).on('mouseleave',function () {
+    //     $('.nav-list > ul >li').removeClass('nav-active');
+    //     $($('.nav-list > ul >li')[index]).addClass('nav-active');
+    // });
     $('.nav-list-mobile > ul >li').on('mouseenter',function () {
         $('.nav-list-mobile > ul >li').removeClass('nav-active-mobile');
         $(this).addClass('nav-active-mobile');
