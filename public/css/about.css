@@ -32,4 +32,8 @@
   .clique-section2-pagination-txt div {
     margin: 0px 20px;
   }
+  .body_en .clique-section2-pagination-txt div {
+    margin: 0px 10px;
+    font-size: 14px;
+  }
 }
