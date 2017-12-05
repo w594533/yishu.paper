@@ -226,6 +226,15 @@
                   }
               });
 
+              $('.clique-section1-img-txt-left-top-content').on('mouseenter',function () {
+                              $('.clique-section1-img-txt-left-top-img img').attr('src','/img/clique-section1-img-control-writeimg.jpg');
+                              $(this).parent().find('.clique-section1-img-txt-left-top-img img').attr('src','/img/clique-section1-img-control-redimg.jpg');
+
+                              $('.clique-section1-img-txt-left-top-content-txt').removeClass('clique-section1-active-color');
+                              $(this).find('.clique-section1-img-txt-left-top-content-txt').addClass('clique-section1-active-color')
+
+                          })
+
               $(".clique-section2-pagination-txt div").on("click", function() {
                 var index = $(this).index();
                 $(this).addClass('active').siblings().removeClass('active');
