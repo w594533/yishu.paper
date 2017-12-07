@@ -18,13 +18,32 @@ class WangEditor extends Field
 
     public function render()
     {
-        $this->script = <<<EOT
-
+      $this->script = <<<EOT
 var editor = new wangEditor('{$this->id}');
-    editor.create();
-
+// 仅仅想移除某几个菜单，例如想移除『插入代码』和『全屏』菜单：
+// 其中的 wangEditor.config.menus 可获取默认情况下的菜单配置
+editor.config.uploadImgFileName = 'huishuoit'
+editor.config.uploadImgUrl = '/api/upload';
+// 配置自定义参数（举例）
+editor.config.uploadParams = {
+ // _token: LA.token
+};
+// 设置 headers（举例）
+ editor.config.uploadHeaders = {
+     'Accept' : 'text/x-json'
+ };
+editor.config.menus = $.map(wangEditor.config.menus, function(item, key) {
+ if (item === 'insertcode') {
+     return null;
+ }
+ if (item === 'location') {
+     return null;
+ }
+ return item;
+});
+editor.create();
 EOT;
-        return parent::render();
+     return parent::render();
 
     }
 }
