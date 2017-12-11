@@ -271,6 +271,8 @@
               pagination: '.index-section1-pagination2',
               paginationClickable: true,
               uniqueNavElements: false,
+              autoplay: 5000,
+              loop:true,
           });
           var swiper_product = new Swiper('#swiper-product', {
             // autoplay:5000,
