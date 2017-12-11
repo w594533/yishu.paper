@@ -17,6 +17,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::post('/upload', "Frontend\HomeController@upload");
+
 Route::group(['namespace' => 'Api', 'prefix' => 'v1'], function () {
   Route::get('/home', 'HomeController@index')->name('home');
 
