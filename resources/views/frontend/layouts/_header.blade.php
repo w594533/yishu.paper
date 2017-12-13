@@ -9,7 +9,7 @@
               <li class="{{isset($active['contact'])?$active['contact']:''}}"><a href="{{action('Frontend\ContactController@show')}}">{{ __('home.nav.contact') }}</a></li>
             </ul>
         </div>
-        <div class="nav-ce-mobile">
+        <div class="nav-ce-mobile displayflex">
           <div class="en @if ($locale == 'en') active @endif"><a href="{{$website_en}}">En</a></div>
           <div class="cn @if ($locale == 'zh-CN') active @endif"><a href="{{$website_cn}}">中文</a></div>
         </div>
@@ -21,7 +21,7 @@
             </div>
             <div class="nav-nav">
                 <div class="nav-list">
-                    <ul class="nav-top">
+                    <ul class="nav-top displayflex">
                       <li class="{{isset($active['home'])?$active['home']:''}}"><a href="{{action('Frontend\HomeController@show')}}">{{ __('home.nav.home') }}</a></li>
                       <li class="{{isset($active['product'])?$active['product']:''}}"><a href="{{action('Frontend\ProductController@show')}}">{{ __('home.nav.product') }}</a></li>
                       <li class="{{isset($active['about'])?$active['about']:''}}"><a href="{{action('Frontend\AboutController@show')}}">{{ __('home.nav.company') }}</a></li>
@@ -30,7 +30,7 @@
                       <li class="{{isset($active['contact'])?$active['contact']:''}}"><a href="{{action('Frontend\ContactController@show')}}">{{ __('home.nav.contact') }}</a></li>
                     </ul>
                 </div>
-                <div class="nav-ce">
+                <div class="nav-ce displayflex">
                   <div class="en @if ($locale == 'en') active @endif"><a href="{{$website_en}}">En</a></div>
                   <div class="cn @if ($locale == 'zh-CN') active @endif"><a href="{{$website_cn}}">中文</a></div>
                 </div>

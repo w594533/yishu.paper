@@ -49,7 +49,10 @@ a {
 }
 
 .displayflex {
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+    display: -mz-flexbox; /* TWEENER IE 10 */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
 .section-hr {
@@ -81,7 +84,10 @@ a {
 
 .nav-nav {
     height: 100%;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+    display: -mz-flexbox; /* TWEENER IE 10 */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     float: right;
     margin-right: 10.9375vw;
 }
@@ -89,7 +95,10 @@ a {
 .nav-nav-mobile {
     position: absolute;
     top: 0;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+    display: -mz-flexbox; /* TWEENER IE 10 */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     flex-direction: column;
     justify-content: center;
     width: 100%;
@@ -98,7 +107,10 @@ a {
 }
 
 .nav-list-mobile > ul {
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     height: 100%;
     font-size: 18px;
     flex-direction: column;
@@ -109,7 +121,10 @@ a {
 .nav-list-mobile > ul > li {
     width: 107px;
     height: 80px;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+    display: -mz-flexbox; /* TWEENER IE 10 */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: center;
 }
 
@@ -141,7 +156,6 @@ a {
 
 .nav-list > ul {
     margin-top: 0;
-    display: flex;
     height: 100%;
     font-size: 18px;
     margin-left: -40px;
@@ -287,7 +301,10 @@ a {
 
 .footer-list > ul li{
     text-align: center;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
 .footer-list > ul > li > a {
@@ -461,6 +478,7 @@ a {
 .index-section1-title-text-bar {
     width: max-content;
     margin: auto;
+    text-align: center;
     font-size: 28px;
 }
 
@@ -494,7 +512,10 @@ a {
 .index-section1-img-teams-top-imgbox {
     width: 150px;
     height: 180px;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     margin: auto;
 }
 
@@ -507,7 +528,10 @@ a {
 
 .index-section1-imgteams-top {
     margin-top: 85px;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
 }
 
@@ -538,12 +562,18 @@ a {
 
 .index-section1-imgteams-bottom {
     margin-top: 52px;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
 }
 
 .index-section1-video {
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
     height: 385px;
     width: 1194px;
@@ -588,7 +618,10 @@ a {
 }
 
 .index-section1-map {
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     margin-top: 75px;
     height: 720px;
     width: 100%;
@@ -600,14 +633,20 @@ a {
 }
 
 .index-section1-bottom-imgbox-top {
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
 }
 
 .index-section1-bottom-img-teams {
     width: 1200px;
     height: 538px;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
     margin:0 auto;
 }
@@ -615,7 +654,10 @@ a {
 .index-section1-bottom-imgbox-left {
     width: 600px;
     height: 100%;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     flex-direction: column;
     justify-content: space-between;
 }
@@ -623,7 +665,10 @@ a {
 .index-section1-bottom-imgbox-right {
     height: 100%;
     width: 580px;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     flex-direction: column;
     justify-content: space-between;
 }
@@ -631,13 +676,19 @@ a {
 .index-section1-bottom-imgbox-left-bottom,
 .index-section1-bottom-imgbox-right-top,
 .index-section1-bottom-imgbox-right-bottom {
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
 }
 
 .index-section1-bottom-img-teams-control {
     width: 59px;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
     margin: auto;
     margin-top: 36px;
@@ -667,7 +718,10 @@ a {
     width: 100%;
     height: 250px;
     margin-top: 69px;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: center;
     overflow: hidden;
 }
@@ -675,7 +729,10 @@ a {
 .index-section2-img-show-box {
     width: 612px;
     height: 250px;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: center;
     z-index: 2;
     position: relative;
@@ -706,7 +763,10 @@ a {
 }
 
 .index-section2-img-left {
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     margin-right: 37px;
     flex: 1;
     flex-direction: row-reverse;
@@ -728,7 +788,10 @@ a {
 }
 
 .index-section2-img-right {
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     margin-left: 37px;
     flex: 1;
 }
@@ -741,7 +804,10 @@ a {
 .index-section2-img-right {
     margin-left: 37px;
     flex: 1;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
 .index-nav-img-control {
@@ -752,7 +818,10 @@ a {
     left: calc(50% - 46px);
 }
 .index-nav-img-control ul{
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
 }
 
@@ -765,7 +834,10 @@ a {
     top: 0;
     width: 100%;
     height: max-content;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
 
 .index-section2-img-now-txt-box{
@@ -855,7 +927,10 @@ a {
 
 .index-section2-img-left-box,
 .index-section2-img-right-box {
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-around;
 }
 
@@ -896,7 +971,10 @@ a {
 .index-section2-img-left-more,
 .index-section2-img-right-more {
     position: relative;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-around;
     width: 795px;
 }
@@ -917,37 +995,55 @@ a {
 
 .index-section2-img-left-more1 {
     position: relative;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     top: 54.5px;
 }
 
 .index-section2-img-left-more2 {
     position: relative;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     top: 54.5px;
 }
 
 .index-section2-img-left-more3 {
     position: relative;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     top: 54.5px;
 }
 
 .index-section2-img-right-more1 {
     position: relative;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     top: 54.5px;
 }
 
 .index-section2-img-right-more2 {
     position: relative;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     top: 54.5px;
 }
 
 .index-section2-img-right-more3 {
     position: relative;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+    display: -mz-flexbox; /* TWEENER IE 10 */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     top: 54.5px;
 }
 
@@ -1032,7 +1128,10 @@ a {
     margin: auto;
     padding-top: 30px;
     width: 60px;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-around;
 }
 
@@ -1050,7 +1149,10 @@ a {
 }
 
 .index-section3-imgs-pagination {
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     margin: auto;
     width: 100px;
     justify-content: space-around;
@@ -1111,7 +1213,10 @@ a {
 }
 
 .index-section3-news-all {
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     /*width: 550px;*/
     font-size: 16px;
     /*height: 105px;*/
@@ -1189,7 +1294,10 @@ a {
 
 .index-section2-img-now-txt {
     color: #fff;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
@@ -1218,6 +1326,7 @@ a {
     width: max-content;
     margin: auto;
     margin-top: 30px;
+    text-align: center;
 }
 .index-section2-img-now-txt-title{
     width: 100%;
@@ -1226,7 +1335,10 @@ a {
 
 .clique-section2-pagination-txt{
     width: max-content;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
     margin: auto;
     position: relative;
@@ -1269,9 +1381,13 @@ a {
 @media screen and (max-width: 1220px) {
     .clique-section2-pagination-txt{
 
-        display: flex;
+      display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
         justify-content: space-between;
         margin: auto;
+        text-align: center;
     }
     .index-section3-text{
         margin-bottom: 10px;
@@ -1295,13 +1411,17 @@ a {
     }
 
     .index-section3-news-box {
-        display: flex;
+      display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
         width: 100%;
     }
 
     .index-section3-left-news {
         width: 80%;
         margin: auto;
+        text-align: center;
     }
 
     .index-section3-news-all {
@@ -1348,6 +1468,7 @@ a {
     .index-section1-imgbox-1-1,
     .index-section1-imgbox-1-3 {
         margin: auto;
+        text-align: center;
     }
 
     .index-section1-imgteams-top,
@@ -1402,7 +1523,10 @@ a {
     }
 
     .index-section2-img-show-box-mobile {
-        display: flex;
+      display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
         justify-content: space-between;
     }
 
@@ -1486,7 +1610,10 @@ a {
 .product-img-teams-right-imgs-box,
 .product-img-teams-right-imgs-box1-rightbox1,
 .product-img-teams-right-imgs-box1-rightbox2 {
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
 }
 
@@ -1567,7 +1694,10 @@ a {
     position: absolute;
     top: 0;
     color: #fff;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     flex-direction: column;
     justify-content: center;
     line-height: 1.5em;
@@ -1629,7 +1759,10 @@ a {
     display: none;
 }
 .product-img-alt{
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     flex-direction: column;
     justify-content: space-around;
 }
@@ -1644,7 +1777,10 @@ a {
 @media screen and (max-width: 1220px) {
     .product-imgs-control{
         width: 500px;
-        display: flex;
+        display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
         margin: auto;
         justify-content: space-between;
     }
@@ -1670,7 +1806,10 @@ a {
     }
     .product-img-teams-right-imgs-class{
         height: auto;
-        display: flex;
+        display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
         justify-content: center;
         width: 500px;
         font-size: 12px;
@@ -1697,7 +1836,10 @@ a {
     }
     .product-img-teams-left-text > ul {
         width: 100%;
-        display: flex;
+        display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
         justify-content: space-between;
         flex-wrap: wrap;
     }
@@ -1812,14 +1954,20 @@ a {
     font-size: 16px;
     width: 378px;
     margin: auto;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
     margin-top: 47px;
     margin-bottom: 38px;
 }
 
 .clique-section2-imgs-teams {
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
     width: 1200px;
     margin: auto;
@@ -1835,7 +1983,10 @@ a {
 }
 
 .clique-section1-img-txt {
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
     width: 100%;
     position: absolute;
@@ -1845,7 +1996,10 @@ a {
 
 .clique-section1-img-txt-left,
 .clique-section1-img-txt-right {
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     flex-direction: column;
     justify-content: space-between;
     width: 50%;
@@ -1861,12 +2015,18 @@ a {
 }
 
 .clique-section1-img-txt-left-top {
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
 }
 
 .clique-section1-img-txt-left-top-content {
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
     width: 482px;
     background-color: transparent;
@@ -1935,7 +2095,10 @@ a {
     position: relative;
     top: -7px;
     height: 8px;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     margin: auto;
     width: 60px;
     justify-content: space-around;
@@ -1952,7 +2115,10 @@ a {
     font-size: 16px;
     width: 378px;
     margin: auto;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
     margin-top: 47px;
     position: relative;
@@ -2077,7 +2243,10 @@ a {
 }
 
 .news-section1-content {
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
     width: 1200px;
     margin: auto;
@@ -2145,7 +2314,10 @@ a {
 }
 
 .news-section1-right-box-content {
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
     border-bottom: 1px solid #ddd;
 
@@ -2206,7 +2378,10 @@ a {
 .news-section2-img-teams {
     width: 1200px;
     margin: auto;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
     margin-top: 60px;
 }
@@ -2236,7 +2411,10 @@ a {
 
 .news-section3-content {
     width: 1200px;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
     margin: 35px auto auto auto;
 }
@@ -2268,7 +2446,10 @@ a {
 
 .news-section2-pagination{
     padding-top: 23px;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-around;
     width: 64px;
     margin: auto;
@@ -2390,7 +2571,10 @@ a {
 }
 
 .news-detail-section1-content-img {
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: center;
     flex-wrap: nowrap;
     margin-top: 28px;
@@ -2412,13 +2596,19 @@ a {
 
 .news-detail-section1-content-control {
     width: 618px;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
     margin: 37px auto auto auto;
 }
 
 .news-detail-section1-content-control-txt {
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
     width: 283px;
     font-size: 16px;
@@ -2433,7 +2623,10 @@ a {
     color: #61b2dd;
 }
 .news-detail-section1-controls {
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
     width: 620px;
     margin: auto;
@@ -2441,7 +2634,10 @@ a {
 }
 
 .news-detail-section1-controls li {
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
     width: 300px;
     height: 35px;
@@ -2675,7 +2871,10 @@ a {
 }
 
 .contact-section1-content-box {
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -2732,7 +2931,10 @@ p {
 }
 
 .media-section1-title-content {
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
     width: 1200px;
     font-size: 28px;
@@ -2760,8 +2962,6 @@ p {
 }
 
 .media-section1-content-box {
-<<<<<<< HEAD
-=======
     width: 1200px;
     height: 122px;
     box-sizing: border-box;
@@ -2769,7 +2969,6 @@ p {
 }
 
 .media-section1-content-box {
->>>>>>> d47a9b6d9814440516e88e793de9833b9ec38e63
     display: flex;
     cursor: pointer;
 }
@@ -2779,17 +2978,11 @@ p {
 }
 
 .media-section1-content-box-time {
-<<<<<<< HEAD
-    text-align: left;
-    color: #dddddd;
-    font-size: 14px;
-=======
     text-align: center;
     width: 70px;
     color: #dddddd;
     margin-left: 21px;
     margin-right: 10px;
->>>>>>> d47a9b6d9814440516e88e793de9833b9ec38e63
 }
 
 .media-section1-content-box-day {
@@ -2823,7 +3016,10 @@ p {
 
 .media-section1-content-pagination {
     width: 470px;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
     margin-left: 0;
 }
@@ -2840,7 +3036,10 @@ p {
 }
 
 .media-section1-content-box-left {
-    display: flex;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+display: -mz-flexbox; /* TWEENER IE 10 */
+display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
 }
 
@@ -2911,7 +3110,10 @@ p {
     font-weight: bold;
     align-self: center;
     width: 97px;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     justify-content: space-between;
 }
 .change span{
@@ -2929,7 +3131,10 @@ a{
     bottom: 6.927083vw;
     height: 65px;
     width: max-content;
-    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;  /* OLD - Firefox 19- H5不用考虑 */
+  display: -mz-flexbox; /* TWEENER IE 10 */
+  display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
     flex-direction: column;
     justify-content: space-between;
     left: calc(50% - 100px);

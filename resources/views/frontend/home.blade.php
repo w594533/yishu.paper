@@ -6,7 +6,9 @@
   <div style="position: relative" class="swiper-container" id="swiper1">
               <div class="swiper-wrapper">
                 @foreach ($banners as $banner)
-                  <img class="swiper-slide" style="width: 100%" src="{{ Storage::url($banner) }}" alt="">
+                  <div class="swiper-slide">
+                    <img style="width: 100%" src="{{ Storage::url($banner) }}" alt="">
+                  </div>
                 @endforeach
               </div>
               <div class="swiper-pagination index-nav-img-pagination"></div>
