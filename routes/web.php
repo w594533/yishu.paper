@@ -30,7 +30,7 @@ Route::get('/', function () {
 Auth::routes();
 
 
-Route::get('/', 'Frontend\DefaultController@show');
+Route::get('/', 'Frontend\HomeController@show');
 
 Route::group(['namespace' => 'Frontend'], function() {
   Route::get('home', 'HomeController@show')->name('home');
