@@ -23,7 +23,6 @@ function array2object($array) {
 }
 
 Route::get('/', function () {
-    $data = '12312';
     return view('welcome', compact('data'));
 });
 
