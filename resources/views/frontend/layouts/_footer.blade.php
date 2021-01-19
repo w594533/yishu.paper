@@ -28,7 +28,7 @@
   <div class="bottom-info displayflex">
       <div class="bottom-info-list displayflex">
           <div>&copy;{{date("Y")}} tthpaper.com&nbsp;</div>
-          <div>浙ICP备15008347号</div>
+          <div>浙ICP备17047746号-2</div>
       </div>
   </div>
 </div>
